@@ -1,0 +1,370 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+/*body de index*/
+ 
+.fondo{
+    background-image: url(../img/fondodefinitivo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+#padre{
+    display: grid;
+    grid-template-areas: 
+                           "header   section"
+                           "nav      section"
+                           "nav      footer";
+    grid-template-columns: 1fr 5fr; 
+    grid-template-rows: 1fr 5fr 1fr; 
+    height: 100vh;
+    margin: 0;
+}
+
+.header_titulo {
+    grid-area: header;
+    background-color:#8af92194;
+    border-right: 8px outset white;
+ 
+}
+
+.header_titulo h1{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 180%;
+    text-align: center;
+    font-style: italic;
+    margin-top: 10%;
+    color:#f68b36;
+}
+ /*navegador index*/
+
+.navegador{
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    background-color:#8af92194;
+    border-right: 8px outset white; 
+}
+
+.listaUno{
+    list-style: none;
+    font-size: 150%;
+    line-height: 2;
+}
+.lista_item{
+    text-decoration: none;
+    color:#ef4335;
+    padding: 30px 30px;
+}
+
+.lista_item:hover{
+    background-color: #f2cd4f;
+    padding: 10px 10px;
+    border-radius: 30px;
+}
+
+.listaDos{
+display: flex;
+justify-content: center;
+align-items:center;
+list-style: none;
+height: 30px;
+background-color:#f2cd4f;
+border-radius: 4px;
+}
+
+.lista_item_iconos{
+    color: #ef4335;
+    padding: 30px 30px;
+}
+
+.section{
+    grid-area: section;
+    position: relative;
+    top: 20%;
+    margin-left: 20%;
+    font-size: 120%;
+    line-height: 1.5;
+    width: 50%;
+}
+/*media queri index*/
+
+@media screen and ( max-width: 720px) {
+    #padre{
+        display: grid;
+        grid-template-areas: 
+                               "header_titulo " 
+                               " navegador"
+                               "section "
+                               "footer";
+        grid-template-columns: 1fr; 
+        grid-template-rows: 10% 10% 2fr 1fr; 
+        height: 100vh;
+        margin: 0;
+    }
+    
+    .header_titulo {
+        grid-area: header_titulo;
+        background-color:#67cd3c6e;
+        border-right: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+    }
+
+    .header_titulo h1{
+        font-size: 120%;
+        font-weight: bolder;
+        margin-top: 8px;
+        
+        
+    }
+
+    .navegador{
+        grid-area: navegador;
+        background-color:#67cd3c6e;
+        border-right: none;
+        border-radius: 4px;
+        flex-wrap: wrap;
+        height: 30px;
+    
+
+
+    }
+    
+    .listaUno{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: none;
+        list-style: none;
+        font-size: 100%;
+        background-color:#f2cd4f;
+        border-radius: 4px;
+        flex-wrap: wrap;
+    }
+    .lista_item{
+        text-decoration: none;
+        color:#9c0303;
+        padding: 5px 5px;
+    }
+    
+    
+    .listaDos{
+    display: none;
+    }
+    
+
+    
+    .section{
+        grid-area: section;       
+        font-size: 100%;
+        line-height: 1.5;
+
+    }
+    
+
+}
+/*tienda*/
+
+.fondoTienda{
+    background-color: #f2cc4f88;
+    background-size: cover;
+    background-image: url(../img/fondodefinitivo.webp);
+    
+}
+.Tienda_header{
+    background-color:#95f33c94;;
+    border-bottom: 4px outset;
+    width: 100%;
+}
+.navbar-brand{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 100%;
+    font-weight: bolder;
+    text-align: center;
+    font-style: italic;
+    color:#f68b36;
+ 
+}
+
+
+.nav-link {
+    color:#f03828;
+    font-size: 120%;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.ContenedorUno img{
+    height: 100%;
+    
+}
+
+.ContenedorDos img{
+    height: 100%;
+}
+     
+/*footer de tienda y recetas*/
+.Tienda_listaDos{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    list-style: none;
+    height: 30px;
+    width: 100%;
+    background-color:#f2cd4f;
+    border-radius: 4px;
+    }
+
+    .footer{
+        position:absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /*media queri tienda*/
+
+@media screen and ( max-width: 768px) {
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0rem;
+    }
+
+    .fondoTienda{
+        background-color: #f2cc4f88;
+        background-size: cover;
+        background-image: none;
+        
+    }
+    
+    .footer{
+        display: none;
+    }
+}
+ /*Recetas*/
+    .fondoRecetas{
+        background-image: url(../img/marmol-blanco-producto-cuadrado1-47cea21eea4f170d2516578998766752-1024-1024.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+
+    }
+    .Flex_Card{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 40px;
+        
+    }
+
+    .card{
+        box-shadow:6px 5px 5px #f68d3693 ;
+    }
+
+    .card:hover{
+        transform: translateY(40px);
+    }
+
+    .card h5{
+        font-family: 'Montserrat Alternates', sans-serif;
+       font-size: 120%;
+        font-weight: bolder;
+        color: #018722;
+        text-align: center;
+    }
+/*media queri recetas*/
+
+  @media screen and ( max-width: 768px)  {
+
+    .fondoRecetas{
+        background-color: #044a15a3;
+        background-image:url(../img/marmol-blanco-producto-cuadrado1-47cea21eea4f170d2516578998766752-1024-1024.jpg);
+        background-size: cover;
+        height: auto;
+    }
+       
+
+    .Flex_Card{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        margin-top: none;
+        
+        
+    }
+  }
+
+    /*contacto*/
+     #GridContact{
+            display: grid;
+            grid-template-areas: 
+                                   "nav   section"
+                                   "nav      section"
+                                   "nav      footer";
+            grid-template-columns: 1fr 5fr; 
+            grid-template-rows: 1fr 5fr 1fr; 
+            height: 100vh;
+            margin: 0;
+        }
+    
+    .nav_contacto{
+        grid-area: nav;
+        background-color:#67cd3c6e;
+        border-right: 8px outset white
+
+       
+    }
+    .nav_contacto h1{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 180%;
+        text-align: center;
+        font-style: italic;
+        margin-top: 10%;
+        color:#f68b36;
+        padding: 20px 20px;
+    }
+
+    .sectionC{
+        width: 400px;
+        height: 200px;
+        transition: all 4s;
+    }
+    .sectionC:hover{
+        width: 600px;
+        height: 500px;
+        background-color: #f2cd4f;
+        margin-left: 40px;
+    }
+    legend{
+        color: #f03828;
+        font-weight: bold;
+        font-size: 100%;
+        font-style: italic;
+        background-color: #f68d3678;
+        padding: 10px;
+    }
+   
+    /*media queri contacto*/
+    @media screen and ( max-width: 768px) {
+    .fondo{
+        height: auto;
+    }
+}
