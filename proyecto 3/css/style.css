@@ -1,0 +1,91 @@
+*{ 
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+
+
+.bodyPrincipal{
+    background-image: url(../img/long-hospital-bright-corridor-rooms-260nw-1544285366.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+.navbar {
+    background-color: #0f77a4;
+}
+
+.navbar-brand{
+   color: #8bd7ff;
+}
+
+.nav-link{
+ color: #6cbfe8;
+
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.card{
+    box-shadow: 4px 2px #0c466f78;
+}
+.card img{
+    height: 250px;
+    width: auto;
+}
+/*card vasopresores*/
+.card-title-vasopresores{
+    color: red;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.card-text-vasopresores{
+    color: rgba(214, 13, 13, 0.993);
+}
+
+/*card de sedacion*/
+.card-title-sedacion{
+ color: rgb(202, 202, 6);
+ font-weight: bolder;
+ text-align: center;
+}
+
+.card-text-sedacion{
+    color: rgb(173, 173, 9);
+}
+
+
+/*card de antibioticos*/
+.card-title-antibioticos{
+    color: #0c466f;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.card-text-antibioticos{
+    color: #08385e;
+}
+
+.footer{
+    background-color: #0f77a47e;
+    padding: 10px 10px;
+   
+    
+    
+}
+.footer_lista{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    color:#8bd7ff; ;
+}
