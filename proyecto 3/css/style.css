@@ -89,3 +89,103 @@
     list-style: none;
     color:#8bd7ff; ;
 }
+
+
+/*pagina vasopresores*/
+.section_vasopresores{
+    margin-top: 20px;
+
+}
+.Vasopresores{
+    text-align: center;
+    padding: 20px 20px;
+    color: #8e0000;
+    background-color: #8bd6ff63;
+    border-radius: 4px;
+}
+.Vasopresores h4{
+    height: 50px;
+    margin-top: 20px;
+}
+
+.Vasopresores_lista{
+    padding: 10px 10px;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Vasopresores_lista_link{
+    padding: 10px 30px;
+    background-color:#df190b83;
+    border-radius: 4px;
+    
+}
+
+.Vasopresores_lista_link:hover{
+    padding: 30px 30px;
+   background-color: orangered;
+}
+
+.alert{
+    background-color: #f4fc06ad;
+}
+
+/*pagina de sedacion*/
+
+.titulo{
+    text-align: center;
+    font-size: 160%;
+    color: rgb(173, 173, 9);
+}
+.section_sedacion{
+    margin-top: 20px;
+
+}
+.Sedacion{
+    text-align: center;
+    padding: 20px 20px;
+    color: rgb(173, 173, 9);
+    background-color: #67bf555d;
+    border-radius: 4px;
+}
+
+.Sedacion_formulario{
+    color:#184f12;
+    font-weight: bolder;
+}
+
+.Sedacion h4{
+    height: 50px;
+    margin-top: 20px;
+    color: #004b00;
+}
+
+.Sedacion_lista{
+    padding: 10px 10px;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
+    gap:5px;
+}
+
+.Sedacion_lista_link{
+    padding: 10px 30px;
+    background-color:#ccffb1;
+    border-radius: 4px;
+    
+}
+
+.Sedacion_lista_link:hover{
+    padding: 30px 30px;
+   background-color: orangered;
+}
+
+.alert{
+    background-color: #f4fc06ad;
+}
