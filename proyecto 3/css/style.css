@@ -31,7 +31,7 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
-
+    margin-bottom: 5px;
 }
 
 .card{
@@ -115,6 +115,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .Vasopresores_lista_link{
@@ -130,7 +131,7 @@
 }
 
 .alert{
-    background-color: #f4fc06ad;
+    background-color: #febc2da7;
 }
 
 /*pagina de sedacion*/
@@ -147,7 +148,7 @@
 .Sedacion{
     text-align: center;
     padding: 20px 20px;
-    color: rgb(173, 173, 9);
+    color:#a05303;
     background-color: #67bf555d;
     border-radius: 4px;
 }
@@ -155,12 +156,16 @@
 .Sedacion_formulario{
     color:#184f12;
     font-weight: bolder;
+    background-color: rgb(242, 239, 234);
+    width: 30rem;
+    text-align: center;
+   margin-left: 25rem;
 }
 
 .Sedacion h4{
     height: 50px;
     margin-top: 20px;
-    color: #004b00;
+    color:rgb(173, 173, 9);
 }
 
 .Sedacion_lista{
@@ -183,9 +188,96 @@
 
 .Sedacion_lista_link:hover{
     padding: 30px 30px;
-   background-color: orangered;
+   background-color:rgba(13, 161, 194, 0.672);
 }
 
-.alert{
-    background-color: #f4fc06ad;
+
+
+/*pagina de antibioticos*/
+
+.titulo{
+    text-align: center;
+    font-size: 160%;
+    color:#0c466f;
+}
+.section_antibiotico{
+    margin-top: 20px;
+
+}
+.article_antibiotico{
+    text-align: center;
+    padding: 20px 20px;
+    color:white;
+    background-color:#7a4df67c;
+    border-radius: 4px;
+}
+
+.antibiotico_formulario{
+    font-weight: bolder;
+    background-color: rgb(242, 239, 234);
+    width: 30rem;
+    text-align: center;
+    margin-left: 25rem;
+    color: #08385e;
+}
+
+.article_antibiotico h4{
+    height: 50px;
+    margin-top: 20px;
+    color:#0c466f;
+}
+
+.antibiotico_lista{
+    padding: 10px 10px;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap:wrap;
+    gap:5px;
+    
+}
+
+.antibiotico_lista_link{
+    padding: 10px 30px;
+    background-color:#08036cbf;
+    border-radius: 4px;
+    
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;   
+}
+
+/*tabla*/
+.tablas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.accordion{
+    width: 50rem
+}
+
+.accordion img{
+    width: 45rem;
+    height: 30rem;
+}
+
+
+.biblio{
+    color: #08385e;
+}
+
+.biblio:hover{
+    transform: translateY(-4rem)
+}
+.biblio ul{
+    list-style: none;
+    background-color: #8bd6ffba;
+    padding: 30px 30px;
+    border-radius: 4px;
+    box-shadow: 3px 4px rgba(0, 128, 0, 0.489);
 }
