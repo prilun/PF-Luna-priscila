@@ -42,33 +42,41 @@ body{
 .bodyFotos{
     height: 100vh;
 }
-.fotostimon{
+
+.fotos_parrafo{
+    margin-top: 70px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.fotos_parrafo h2{
+    font-size: 3rem;
+    color: aliceblue;
+}
+.fotos_contenedor{
     display: flex;
     padding: 5px;
     flex-wrap: wrap;
 }
-.fotostimon img{
+.fotos_contenedor img{
  width: 100%;
  margin-top: 30px;
+ opacity: 0.7; 
 }
 
-.fotos{
+.fotos_contenedor_timon{
     flex: 25%;
     padding: 5px;
     
 }
 
-.fotos img{
-    opacity: 0.7; 
-}
-
-.fotos img:hover{
+.fotos_contenedor_timon img:hover{
     opacity: 1;
     border: 2px solid wheat;
 }
 
 @media (max-width:600px){
-    .fotos{
+    .fotos_contenedor{
         flex: 100%;
         padding: 5px;
 
@@ -76,7 +84,7 @@ body{
 }
     
 @media (max-width:800px){
-    .fotos{
+    .fotos_contenedor{
         flex: 50%;
         padding: 5px;
 
@@ -84,21 +92,45 @@ body{
 }
 
 /*pagina about me */
-
-
-/*hobbi*/
-
-.bodyHobbies{
+.bodyaboutme{
+    background-color:rgba(14, 14, 14, 0.99);
     height: 100vh;
 }
-.card{
-    
+
+.aboutme_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.containerHobbies img{
-    width: 100%;
-    height: 100%;
+.card{
+    box-shadow: 0px 10px 10px white ;
+    margin-top: 80px;
+    height: 400px;
+   
 }
 
+.card:hover{
+    background-color: rgba(255, 166, 0, 0.726);
+    transform: translateX(40px);
+}
+.card img{
+    height: 400px;
+    width: 550px;
+}
+
+.card-title{
+    background-color: rgba(0, 0, 255, 0.591);
+    border-radius: 4px;
+    color: wheat;
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+.card-body{
+    text-align: center;
+    padding: 100px;
+    color: black;
+}
 /*footer*/
 
 .footer_lista{
@@ -108,9 +140,116 @@ body{
     padding: 10px 10px;
     list-style: none;
     background-color:#707b7c88;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 .footer_lista a{
     text-decoration: none;
     color: black;
+    
 }
+/*hobbi*/
+
+
+#padre{
+    display: grid;
+    grid-template-areas: "header header"
+                         "hobbies carousel"
+                         "footer  footer";
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 10% 2fr 10%;
+    height: 100vh;
+    gap: 10px;
+    justify-items:center;
+    align-items:center;
+}
+
+.headerHobbies{
+    grid-area: header;
+}
+
+.hobbies{
+    grid-area: hobbies;
+    font-size: 1.5rem;
+    color: antiquewhite;
+    text-align:center;
+    padding: 20px 20px;
+    
+}
+
+.carousel{
+    grid-area: carousel ;
+    height: 500px;
+    width: 500px;
+    
+
+}
+
+.carousel  img{
+    height: 500px;
+    width: 500px;
+}
+
+
+
+.footer_hobbies{
+    grid-area: footer;
+    width: 100%;
+}
+
+.footer_hobbies_lista {
+    display:flex;
+    justify-content: space-between;
+    align-content:center;
+    list-style: none;
+    background-color: #707b7c88;
+}
+.footer_hobbies_lista a{
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+@media (max-width:600px){
+    #padre{
+        display: grid;
+        grid-template-areas: "header "
+                             "hobbies"
+                              "carousel"
+                             "footer";
+        grid-template-columns: 3fr;
+        grid-template-rows: 10% 2fr 2fr 10%;
+        height: 100vh;
+        gap: 3px;
+        justify-items:center;
+        align-items:center;
+    }
+
+    .carousel{
+        grid-area: carousel ;
+        height: 200px;
+        width: 200px;
+        
+    
+    }
+    
+    .carousel  img{
+        height: 200px;
+        width: 200px;
+    }
+    
+
+}
+
+@media (max-width:800px){
+        .fotos_contenedor{
+            flex: 50%;
+            padding: 5px;
+    
+        }
+
+    }
+
+
 
