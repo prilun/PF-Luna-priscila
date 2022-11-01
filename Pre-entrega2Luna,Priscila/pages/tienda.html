@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <!---boostrap y css-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!---tipos de letras-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Overpass:wght@200&display=swap"
-    rel="stylesheet">
-
-  <title>Tienda Veggie</title>
-
-</head>
+  <head>
+  
+    <title>Tienda Veggie</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!---boostrap y css-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+     <link rel="stylesheet" href="../css/style.css">
+     <!--WOW-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+     <!---tipos de letras-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Overpass:wght@200&display=swap" rel="stylesheet">
+    
+    </head>
 
 <body class="fondoTienda">
   <div class="container-fluid">
@@ -45,44 +43,81 @@
               <li class="nav-item">
                 <a class="nav-link" href="./contacto.html">Contacto</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/preguntas.html">Preguntas Frecuentes</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <section class="contenedor">
-    <article class="ContenedorUno">
-    <div class="card mb-3" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="../img/harinas.jpg" class="img-fluid rounded-start" alt="harinas">
+    <section class="container" >
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/carousel3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Alimentos organicos</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, molestiae!.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../img/carousel2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Agroecologicos</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../img/carousel1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Precio accesible</h5>
+              <p>Se puede comer rico y saludable de manera accesible!</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="contenedorGrid">
+      <div id="Tienda_productos">
+        <div class="harinas">
+          <div class="harinas_capa">
+            <h4>Harinas</h4>
+            <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Comprar</a>
+          </div>
+        </div>
+        <div class="leche">
+          <div class="leche_capa">
+           <h4>Bebidas vegetales</h4>
+           <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Comprar</a>
+          </div>
+        </div>
+        <div class="almendras">
+          <div class="almendras_capa">
+           <h4>Keto</h4>
+           <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Comprar</a>
          </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Productos</h5>
-            <p class="card-text">Nuestros mejores productos organicos, 100% naturales, al alcance de un click</p>
-            <p class="card-text"><small class="text-muted"><a href="#">ingresa a la tienda</a></small></p>
+        </div>
+        <div class="frutos">
+          <div class="frutos_capa">
+            <h4>Vegan</h4>
+            <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Comprar</a>
           </div>
         </div>
       </div>
-    </div>
-    </article>
-  <article class="ContenedorDos" >
-    <div class="card mb-3" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-        <a href="../index.html"><img src="../img/Bebidavegetal2.jpg" class="img-fluid rounded-start" alt="imagen"></a>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Promociones</h5>
-            <p class="card-text">Haz click en la imagen para conocer nuestras promociones ! </p>
-            <p class="card-text"><small class="text-muted">Revisa las promociones</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </article>
     </section>
   </div>
   <footer class="footer">
@@ -95,9 +130,13 @@
             class="fa-brands fa-facebook"></i></a></li>
     </ul>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    <!--bstrp y wow-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 </body>
-
 </html>

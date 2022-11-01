@@ -179,6 +179,9 @@ border-radius: 4px;
     background-color: #f2cc4f88;
     background-size: cover;
     background-image: url(../img/fondodefinitivo.webp);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     
 }
 .Tienda_header{
@@ -201,40 +204,156 @@ border-radius: 4px;
     color:#f03828;
     font-size: 120%;
 }
-
-.contenedor{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 3rem;
+.carousel{
+    margin-top: 20px;
+}
+.carousel h5 , p{
+    color: black;
+}
+.carousel img{
+    height:400px;
 }
 
-.ContenedorUno img{
+.contenedorGrid{
+ height: 700px;
+ color: wheat;
+ padding: 20px 20px;
+ margin-left: 110px;
+}
+
+.contenedorGrid h4{
+    background-color: #0187227d;
+    font-weight: bolder;
+    padding: 10px 10px;
+
+}
+
+#Tienda_productos{
+    display: grid;
+    grid-template-areas: "harinas harinas leche"
+                         "frutos almendras  leche";
+    grid-template-columns: repeat(3,28%);
+    grid-template-rows: repeat(3, 100%);
+    justify-items: center;
+    align-items: center;
+    height: 250px;
+
+}
+
+.harinas{
+    grid-area: harinas;
+    background-image: url(../img/harinas.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    width: 100%;
     height: 100%;
+    text-align: center;
+    padding: 40px;
+    border: 2px solid rgb(10, 129, 53);
+    
+
+}
+
+.harinas_capa{
+    transition: all 1s ease-out;
+    opacity: 0;
+   
+}
+.harinas_capa:hover{
+    opacity: 1;
+    margin-top: 50px;
+}
+
+.leche{
+    grid-area: leche;
+    background-image: url(../img/bebidavegetal.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    border: 2px solid rgb(10, 129, 53);
     
 }
 
-.ContenedorDos img{
-    height: 100%;
+.leche_capa{
+    transition: all 1s ease-out;
+    opacity: 0;
+    
 }
-     
+
+
+.leche_capa:hover{
+    opacity: 1;
+    margin-top: 50px;
+}
+
+.frutos{
+    grid-area: frutos;
+    background-image: url(../img/frutossecos.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    border: 2px solid rgb(10, 129, 53);
+}
+
+.frutos_capa{
+    transition: all 1s ease-out;
+    opacity: 0;
+}
+
+.frutos_capa:hover{
+    opacity: 1;
+    margin-top: 50px;
+}
+
+.almendras{
+    grid-area: almendras;
+    background-image: url(../img/harinaalmenrdas.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    border: 2px solid rgb(10, 129, 53);
+}
+.almendras_capa{
+    transition: all 1s ease-out;
+    opacity: 0;
+}
+.almendras_capa:hover{
+    opacity: 1;
+    margin-top: 50px;
+}
 /*footer de tienda y recetas*/
 .Tienda_listaDos{
     display: flex;
-    justify-content: center;
-    align-items:center;
+    justify-content: space-around;
+    align-items:stretch;
     list-style: none;
-    height: 30px;
+    height: 20px;
     width: 100%;
-    background-color:#f2cd4f;
     border-radius: 4px;
     }
+.Tienda_listaDos{
+    padding: 10px 60px;
+}
 
     .footer{
-        position:absolute;
-        bottom: 0;
-        width: 100%;
+        
+        background-color:#f2cc4fb9;
+        padding: 10px 10px;
+        margin-top: auto;
+    
     }
 
     /*media queri tienda*/
@@ -263,7 +382,11 @@ border-radius: 4px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+
+     
 
     }
     .Flex_Card{
@@ -313,14 +436,21 @@ border-radius: 4px;
   }
 
     /*contacto*/
+
+    .fondoCon{
+        background-image: url(../img/fondodefinitivo.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
      #GridContact{
             display: grid;
             grid-template-areas: 
-                                   "nav   section"
+                                   "nav      section"
                                    "nav      section"
                                    "nav      footer";
             grid-template-columns: 1fr 5fr; 
-            grid-template-rows: 1fr 5fr 1fr; 
+            grid-template-rows: 1fr 5fr 5%; 
             height: 100vh;
             margin: 0;
         }
@@ -346,6 +476,8 @@ border-radius: 4px;
         width: 400px;
         height: 200px;
         transition: all 4s;
+       margin-top: 40px;
+       margin-left: 40px;
     }
     .sectionC:hover{
         width: 600px;
@@ -361,10 +493,23 @@ border-radius: 4px;
         background-color: #f68d3678;
         padding: 10px;
     }
-   
+   .footer_contacto{
+    grid-area: footer;
+    background-color:#f2cd4f;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   }
+   .listaCont{
+    display: flex;
+    justify-content: space-around;
+    align-content:stretch;
+    list-style:none;
+   }
     /*media queri contacto*/
     @media screen and ( max-width: 768px) {
     .fondo{
         height: auto;
     }
 }
+
