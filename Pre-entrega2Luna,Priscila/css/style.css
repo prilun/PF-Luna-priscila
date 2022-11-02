@@ -7,7 +7,7 @@
 /*body de index*/
  
 .fondo{
-    background-image: url(../img/fondodefinitivo.webp);
+    background-image: url(../img/marmol-blanco-producto-cuadrado1-47cea21eea4f170d2516578998766752-1024-1024.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -19,9 +19,9 @@
     grid-template-areas: 
                            "header   section"
                            "nav      section"
-                           "nav      footer";
+                           "nav      section";
     grid-template-columns: 1fr 5fr; 
-    grid-template-rows: 1fr 5fr 1fr; 
+    grid-template-rows: 1fr 5fr 10%; 
     height: 100vh;
     margin: 0;
 }
@@ -51,6 +51,7 @@
     align-items: center;
     background-color:#8af92194;
     border-right: 8px outset white; 
+    height: 100vh;
 }
 
 .listaUno{
@@ -87,12 +88,9 @@ border-radius: 4px;
 
 .section{
     grid-area: section;
-    position: relative;
-    top: 20%;
-    margin-left: 20%;
-    font-size: 120%;
-    line-height: 1.5;
-    width: 50%;
+    height: auto;
+    width: auto;
+    margin-top: 30px;
 }
 /*media queri index*/
 
@@ -103,7 +101,7 @@ border-radius: 4px;
                                "header_titulo " 
                                " navegador"
                                "section "
-                               "footer";
+                               "section";
         grid-template-columns: 1fr; 
         grid-template-rows: 10% 10% 2fr 1fr; 
         height: 100vh;
@@ -215,7 +213,7 @@ border-radius: 4px;
 }
 
 .contenedorGrid{
- height: 700px;
+ height: 70px;
  color: wheat;
  padding: 20px 20px;
  margin-left: 110px;
@@ -232,7 +230,7 @@ border-radius: 4px;
     display: grid;
     grid-template-areas: "harinas harinas leche"
                          "frutos almendras  leche";
-    grid-template-columns: repeat(3,28%);
+    grid-template-columns: repeat(3,30%);
     grid-template-rows: repeat(3, 100%);
     justify-items: center;
     align-items: center;
