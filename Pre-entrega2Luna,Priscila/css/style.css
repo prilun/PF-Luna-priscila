@@ -17,15 +17,105 @@
 #padre{
     display: grid;
     grid-template-areas: 
-                           "header   section"
-                           "nav      section"
-                           "nav      section";
-    grid-template-columns: 1fr 5fr; 
-    grid-template-rows: 1fr 5fr 10%; 
+                           "nav  none    none    none "
+                           " nav   harinas harinas leche"
+                           " nav   frutos almendras  leche"; 
+    grid-template-columns: 20% 26% 26% 26%;  
+    grid-template-rows: 5% 45% 45%;
+    grid-column-gap: 7px;
+    grid-row-gap: 10px;
     height: 100vh;
     margin: 0;
 }
 
+
+
+
+.harinas{
+    grid-area: harinas;
+    background-image: url(../img/harinas.jpg);
+    background-position: center;
+    background-size: cover;
+  
+    text-align: center;
+    padding: 40px;
+    border: 2px solid rgb(10, 129, 53);
+    
+
+}
+
+.harinas_capa{
+    transition: all 1s ease-out;
+    opacity: 0;
+   
+}
+.harinas_capa:hover{
+    opacity: 1;
+    margin-top: 50px;
+}
+
+.leche{
+    grid-area: leche;
+    background-image: url(../img/bebidavegetal.jpg);
+    background-position: center;
+    background-size: cover;
+
+    padding: 40px;
+    border: 2px solid rgb(10, 129, 53);
+    
+}
+
+.leche_capa{
+    transition: all 1s ease-out;
+    opacity: 0;
+    
+}
+
+
+.leche_capa:hover{
+    opacity: 1;
+    margin-top: 50px;
+}
+
+.frutos{
+    grid-area: frutos;
+    background-image: url(../img/frutossecos.jpg);
+    background-position: center;
+    background-size: cover;
+   
+    text-align: center;
+    padding: 40px;
+    border: 2px solid rgb(10, 129, 53);
+}
+
+.frutos_capa{
+    transition: all 1s ease-out;
+    opacity: 0;
+}
+
+.frutos_capa:hover{
+    opacity: 1;
+    margin-top: 50px;
+}
+
+.almendras{
+    grid-area: almendras;
+    background-image: url(../img/harinaalmenrdas.jpg);
+    background-position: center;
+    background-size: cover;
+  
+    text-align: center;
+    padding: 40px;
+    border: 2px solid rgb(10, 129, 53);
+}
+.almendras_capa{
+    transition: all 1s ease-out;
+    opacity: 0;
+}
+.almendras_capa:hover{
+    opacity: 1;
+    margin-top: 50px;
+}
 .header_titulo {
     grid-area: header;
     background-color:#8af92194;
@@ -51,7 +141,7 @@
     align-items: center;
     background-color:#8af92194;
     border-right: 8px outset white; 
-    height: 100vh;
+    height: 100vh
 }
 
 .listaUno{
@@ -86,12 +176,6 @@ border-radius: 4px;
     padding: 30px 30px;
 }
 
-.section{
-    grid-area: section;
-    height: auto;
-    width: auto;
-    margin-top: 30px;
-}
 /*media queri index*/
 
 @media screen and ( max-width: 720px) {
@@ -108,15 +192,19 @@ border-radius: 4px;
         margin: 0;
     }
     
-    .header_titulo {
-        grid-area: header_titulo;
-        background-color:#67cd3c6e;
-        border-right: none;
-        display: flex;
+    #Tienda_productos{
+        display: grid;
+        grid-template-areas: "harinas harinas leche"
+                             "frutos almendras  leche";
+        grid-template-columns: repeat(3,30%);
+        grid-template-rows: repeat(3, 100%);
+        justify-items: center;
         align-items: center;
-        justify-content: center;
-      
+        height: 250px;
+    
     }
+
+
 
     .header_titulo h1{
         font-size: 120%;
@@ -209,129 +297,21 @@ border-radius: 4px;
     color: black;
 }
 .carousel img{
-    height:400px;
+    height:500px;
 }
-
-.contenedorGrid{
- height: 70px;
- color: wheat;
- padding: 20px 20px;
- margin-left: 110px;
+.cuerpo{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 50px;
+   gap: 30px;
+  
 }
-
-.contenedorGrid h4{
-    background-color: #0187227d;
-    font-weight: bolder;
-    padding: 10px 10px;
-
-}
-
-#Tienda_productos{
-    display: grid;
-    grid-template-areas: "harinas harinas leche"
-                         "frutos almendras  leche";
-    grid-template-columns: repeat(3,30%);
-    grid-template-rows: repeat(3, 100%);
-    justify-items: center;
-    align-items: center;
-    height: 250px;
-
-}
-
-.harinas{
-    grid-area: harinas;
-    background-image: url(../img/harinas.jpg);
-    background-position: center;
-    background-size: cover;
-    margin: 10px;
-    width: 100%;
-    height: 100%;
+.titulo{
     text-align: center;
-    padding: 40px;
-    border: 2px solid rgb(10, 129, 53);
-    
-
+    margin-top: 10px;
 }
 
-.harinas_capa{
-    transition: all 1s ease-out;
-    opacity: 0;
-   
-}
-.harinas_capa:hover{
-    opacity: 1;
-    margin-top: 50px;
-}
-
-.leche{
-    grid-area: leche;
-    background-image: url(../img/bebidavegetal.jpg);
-    background-position: center;
-    background-size: cover;
-    margin: 10px;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    padding: 40px;
-    border: 2px solid rgb(10, 129, 53);
-    
-}
-
-.leche_capa{
-    transition: all 1s ease-out;
-    opacity: 0;
-    
-}
-
-
-.leche_capa:hover{
-    opacity: 1;
-    margin-top: 50px;
-}
-
-.frutos{
-    grid-area: frutos;
-    background-image: url(../img/frutossecos.jpg);
-    background-position: center;
-    background-size: cover;
-    margin: 10px;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    padding: 40px;
-    border: 2px solid rgb(10, 129, 53);
-}
-
-.frutos_capa{
-    transition: all 1s ease-out;
-    opacity: 0;
-}
-
-.frutos_capa:hover{
-    opacity: 1;
-    margin-top: 50px;
-}
-
-.almendras{
-    grid-area: almendras;
-    background-image: url(../img/harinaalmenrdas.jpg);
-    background-position: center;
-    background-size: cover;
-    margin: 10px;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    padding: 40px;
-    border: 2px solid rgb(10, 129, 53);
-}
-.almendras_capa{
-    transition: all 1s ease-out;
-    opacity: 0;
-}
-.almendras_capa:hover{
-    opacity: 1;
-    margin-top: 50px;
-}
 /*footer de tienda y recetas*/
 .Tienda_listaDos{
     display: flex;
