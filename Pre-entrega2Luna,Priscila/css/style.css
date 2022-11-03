@@ -290,26 +290,46 @@ border-radius: 4px;
     color:#f03828;
     font-size: 120%;
 }
-.carousel{
-    margin-top: 20px;
-}
+
 .carousel h5 , p{
     color: black;
 }
 .carousel img{
-    height:500px;
+    height:650px;
 }
 .cuerpo{
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-top: 50px;
+   margin-top: 20px;
+   margin-bottom: 10px;
    gap: 30px;
   
 }
 .titulo{
     text-align: center;
     margin-top: 10px;
+}
+
+.promociones{
+ height: 200px;
+ width: 100%;
+ margin-top: 20px;
+ background-color: #013b0f;
+}
+
+.promociones a{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    color: wheat;
+    font-family:'Montserrat Alternates', sans-serif;
+    font-size: 3rem;
+    padding-top: 40px;
+    
+
 }
 
 /*footer de tienda y recetas*/
@@ -453,15 +473,25 @@ border-radius: 4px;
     .sectionC{
         width: 400px;
         height: 200px;
-        transition: all 4s;
+        /*ver si la dejamos
+        transition: all 4s;*/
        margin-top: 40px;
-       margin-left: 40px;
+       height: 100%;
+       width: auto;
+     
+       display: flex;
+
+    }
+
+    fieldset{
+       
+        width: 500px;
+        padding: 20px 20px;
+        margin-left: 10px;
+
     }
     .sectionC:hover{
-        width: 600px;
-        height: 500px;
         background-color: #f2cd4f;
-        margin-left: 40px;
     }
     legend{
         color: #f03828;
@@ -489,5 +519,29 @@ border-radius: 4px;
     .fondo{
         height: auto;
     }
+}
+
+.contacto{
+    height: 100%;
+
+
+}
+.listaUnocontacto{
+    list-style: none;
+    text-align: center;
+    line-height: 2;
+    height: 100%;
+    padding-top: 30px;
+}
+
+.listaDoscontacto {
+    margin-top: 40px;
+    height: 100%;
+    width: 100%;
+
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    
 }
 
