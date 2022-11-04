@@ -1,0 +1,170 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+/*colores*/
+/*GRIDS*/
+/*index*/
+#principal__Grid {
+  display: grid;
+  grid-template-areas: "navegador__principal navegador__principal navegador__principal" " harinas harinas leche" " frutos almendras  leche";
+  grid-template-columns: repeat(3, 32%);
+  grid-template-rows: 5% 45% 45%;
+  grid-column-gap: 7px;
+  grid-row-gap: 15px;
+  height: 100vh;
+  width: auto;
+  margin-top: 2px;
+  margin-left: 30px;
+}
+
+.navegador__principal {
+  grid-area: navegador__principal;
+}
+
+.harinas, .almendras, .frutos, .leche {
+  grid-area: harinas;
+}
+
+.leche {
+  grid-area: leche;
+}
+
+.frutos {
+  grid-area: frutos;
+}
+
+.almendras {
+  grid-area: almendras;
+}
+
+/*GRID contactos*/
+#GridContact {
+  display: grid;
+  grid-template-areas: "nav      section" "nav      section" "nav      footer";
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 5fr 5%;
+  height: 100vh;
+  margin: 0;
+}
+
+.nav_contacto {
+  grid-area: nav;
+}
+
+.footer_contacto {
+  grid-area: footer;
+}
+
+/*index*/
+.navegador__listaUno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.harinas, .almendras, .frutos, .leche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listaDos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fondoTienda {
+  display: flex;
+  flex-direction: column;
+}
+
+.fondoRecetas {
+  display: flex;
+  flex-direction: column;
+}
+
+.cuerpo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promociones a {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.Tienda_listaDos {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.Flex_Card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.listaCont {
+  display: flex;
+  justify-content: space-around;
+  align-content: stretch;
+}
+
+.principal {
+  background-image: url(../img/marmol-blanco-producto-cuadrado1-47cea21eea4f170d2516578998766752-1024-1024.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.navegador__principal {
+  background-color: rgba(138, 249, 33, 0.5803921569);
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  color: #f68b36;
+  width: 100%;
+  height: 40px;
+}
+
+.navegador__listaUno {
+  border-right: 8px outset white;
+  list-style: none;
+  margin-top: 5px;
+}
+.navegador__listaUno__link {
+  text-decoration: none;
+  color: #f03828;
+  padding: 30px 30px;
+  font-weight: bolder;
+}
+
+.harinas, .leche, .frutos, .almendras {
+  background-image: url(../img/harinas.jpg);
+  border: 2px solid rgb(10, 129, 53);
+  color: white;
+}
+
+.leche {
+  background-image: url(../img/bebidavegetal.jpg);
+}
+
+.frutos {
+  background-image: url(../img/Alacena1.jpg);
+}
+
+.almendras {
+  background-image: url(../img/postit.jpg);
+}
+
+.principal__footer {
+  border: 2px solid rgb(10, 129, 53);
+}/*# sourceMappingURL=style.css.map */

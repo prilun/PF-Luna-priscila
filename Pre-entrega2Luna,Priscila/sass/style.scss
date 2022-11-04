@@ -1,0 +1,64 @@
+@import "./base_css/resets";
+@import "./base_css/variables";
+@import "./estructuras/grid";
+@import "./base_css/typografia";
+@import "./estructuras/flex";
+
+
+
+
+.principal{
+    background-image: url(../img/marmol-blanco-producto-cuadrado1-47cea21eea4f170d2516578998766752-1024-1024.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.navegador__principal{
+        background-color:$bgcolor-basico;
+        font-family:$letra-secundaria;
+        font-size: 1rem;
+        font-style: italic;
+        color:$color-basico2;
+        width: 100%;
+        height: 40px;
+}
+.navegador__listaUno{
+    border-right:$border-8pxwhite;
+    list-style: none;
+    margin-top: 5px;
+    &__link{
+        text-decoration: none;
+        color: $color-basico3;
+        padding: 30px 30px;
+        font-weight: bolder;
+       
+
+
+    }
+}
+
+.harinas {
+    background-image: url(../img/harinas.jpg);
+    border:$border-verde;
+    color:$color-basico4;
+}
+
+.leche { 
+    background-image: url(../img/bebidavegetal.jpg);
+    @extend .harinas;
+}
+
+.frutos {
+    background-image:url(../img/Alacena1.jpg);
+    @extend .harinas;
+}
+
+.almendras {
+    background-image: url(../img/postit.jpg);
+    @extend .harinas;
+}
+
+.principal__footer{
+    border: $border-verde;
+}

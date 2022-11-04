@@ -1,0 +1,74 @@
+/*index*/
+.navegador__listaUno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.harinas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leche {
+    @extend .harinas;
+}
+
+.frutos {
+    @extend .harinas;
+}
+
+.almendras {
+     @extend .harinas;
+}
+
+
+.listaDos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fondoTienda {
+    display: flex;
+    flex-direction: column;
+}
+
+.fondoRecetas {
+    display: flex;
+    flex-direction: column;
+}
+
+.cuerpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promociones a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.Tienda_listaDos {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.Flex_Card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.listaCont {
+    display: flex;
+    justify-content: space-around;
+    align-content: stretch;
+}

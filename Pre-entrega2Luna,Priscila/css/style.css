@@ -1,34 +1,6 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-    font-family: 'Overpass', sans-serif;
-}
+
 /*body de index*/
  
-.fondo{
-    background-image: url(../img/marmol-blanco-producto-cuadrado1-47cea21eea4f170d2516578998766752-1024-1024.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    
-}
-
-#padre{
-    display: grid;
-    grid-template-areas: 
-                           "nav  none    none    none "
-                           " nav   harinas harinas leche"
-                           " nav   frutos almendras  leche"; 
-    grid-template-columns: 20% 26% 26% 26%;  
-    grid-template-rows: 5% 45% 45%;
-    grid-column-gap: 7px;
-    grid-row-gap: 10px;
-    height: 100vh;
-    margin: 0;
-}
-
-
 
 
 .harinas{
@@ -116,44 +88,12 @@
     opacity: 1;
     margin-top: 50px;
 }
-.header_titulo {
-    grid-area: header;
-    background-color:#8af92194;
-    border-right: 8px outset white;
- 
-}
+¡
 
-.header_titulo h1{
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 180%;
-    text-align: center;
-    font-style: italic;
-    margin-top: 10%;
-    color:#f68b36;
-}
+
  /*navegador index*/
 
-.navegador{
-    grid-area: nav;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    align-items: center;
-    background-color:#8af92194;
-    border-right: 8px outset white; 
-    height: 100vh
-}
 
-.listaUno{
-    list-style: none;
-    font-size: 150%;
-    line-height: 2;
-}
-.lista_item{
-    text-decoration: none;
-    color:#ef4335;
-    padding: 30px 30px;
-}
 
 .lista_item:hover{
     background-color: #f2cd4f;
