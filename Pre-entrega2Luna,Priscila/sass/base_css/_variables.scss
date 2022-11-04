@@ -7,5 +7,27 @@ $color-footer-principal :#f2cd4f;
 $color-footer-secundario :#f2cc4fb9;
 $border-verde :2px solid rgb(10, 129, 53);
 $letra-secundaria :'Montserrat Alternates', sans-serif;
-$border-8pxwhite:8px outset white; 
+$border-8pxwhite:8px outset white;
+$tipografiasecundaria:'Montserrat Alternates', sans-serif; 
+/*mixin*/
 
+@mixin flex-center-center {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+@mixin capa-principal{
+    transition: all 1s ease-out;
+    text-align: center;
+    height: 10rem;
+    width: 20rem;
+    opacity: 0;
+    color: rgb(6, 92, 6);
+}
+
+@mixin hover-capa-principal{
+    opacity: 1;
+    margin-top: 50px;
+    padding-top: 30px;
+}

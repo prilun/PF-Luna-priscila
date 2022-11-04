@@ -1,37 +1,26 @@
 /*index*/
 .navegador__listaUno{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+
+    @include flex-center-center;
    
 }
 
 .harinas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   @include flex-center-center;
+    
 }
 
 .leche {
-    @extend .harinas;
+@include flex-center-center;
 }
 
 .frutos {
-    @extend .harinas;
+ @include flex-center-center;
 }
 
 .almendras {
-     @extend .harinas;
+    @include flex-center-center;
 }
-
-
-.listaDos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 .fondoTienda {
     display: flex;
@@ -44,21 +33,15 @@
 }
 
 .cuerpo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center-center;
 }
 
 .promociones a {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    @include flex-center-center;
 }
 
 .Tienda_listaDos {
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
+    @include flex-center-center;
 }
 
 .Flex_Card {

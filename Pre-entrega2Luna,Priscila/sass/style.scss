@@ -11,7 +11,8 @@
     background-image: url(../img/marmol-blanco-producto-cuadrado1-47cea21eea4f170d2516578998766752-1024-1024.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    position: relative;
+    min-height: 100vh;
 }
 
 .navegador__principal{
@@ -30,9 +31,13 @@
     &__link{
         text-decoration: none;
         color: $color-basico3;
-        padding: 30px 30px;
+        padding: 20px 10px;
         font-weight: bolder;
-       
+        height: 100%;
+        &:hover{
+        background-color: $color-basico2;
+        border-radius: 20px;
+        }
 
 
     }
@@ -42,23 +47,68 @@
     background-image: url(../img/harinas.jpg);
     border:$border-verde;
     color:$color-basico4;
+    &__capa{
+        @include capa-principal;
+        &:hover{
+            @include hover-capa-principal;
+        }
+    }
+
 }
 
 .leche { 
     background-image: url(../img/bebidavegetal.jpg);
     @extend .harinas;
+    &__capa{
+        @include capa-principal;
+        &:hover{
+            @include hover-capa-principal;
+        }
+    }
+    
 }
 
 .frutos {
     background-image:url(../img/Alacena1.jpg);
     @extend .harinas;
+    &__capa{
+        @include capa-principal;
+        &:hover{
+            @include hover-capa-principal;
+        }
+    }
 }
 
 .almendras {
     background-image: url(../img/postit.jpg);
     @extend .harinas;
+    &__capa{
+        @include capa-principal;
+        &:hover{
+            @include hover-capa-principal;
+        }
+    }
 }
+.AcercaDeNosotros{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 60px;
+    text-transform: uppercase;
+    font-family:$tipografiasecundaria;
 
+    &__parrafo{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding: 20px 20px;
+    }
+}
 .principal__footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     border: $border-verde;
+    background-color:$color-footer-principal;
+    
 }
