@@ -25,91 +25,103 @@
 
   <div id="principal__Grid">
     <header class="navegador__principal">
-      <nav class="navbar bg-light fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Tienda Veggie</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tienda veggie</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+      <nav class="wow animate__animated animate__backInUp">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Tienda Veggie</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Tienda</a>
+                  <a class="nav-link" href="./pages/tienda.html">Tienda</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Recetas</a>
+                  <a class="nav-link" href="./pages/recetas.html">Recetas</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Preguntas Frecuentes</a>
+                  <a class="nav-link" href="./pages/preguntas.html">Preguntas</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contacto</a>
+                  <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                 </li>
               </ul>
             </div>
           </div>
-        </div>
+        </nav>
       </nav>
     </header>
     <div class="harinas">
-      <div class="harinas__capa">
-        <h4>Harinas</h4>
-        <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Comprar</a>
+      <div class="harinas__caja">
+        <img class="harinas__caja__img" src="./img/harinas.jpg" alt="imagen">
+        <div class="harinas__caja__capa">
+          <h4>Harinas</h4>
+          <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Comprar</a>
+        </div>
       </div>
     </div>
-    <div class="leche">
-      <div class="leche__capa">
-        <h4>Bebidas vegetales</h4>
-        <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Comprar</a>
+      <div class="leche">
+       <div class="leche__caja">
+       <img class="leche__caja__img" src="./img/bebidavegetal.jpg" alt="bebida">
+        <div class="leche__caja__capa">
+          <h4>Bebidas vegetales</h4>
+          <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Comprar</a>
+        </div>
+       </div>
+      </div>
+      <div class="almendras">
+        <div class="almendras__caja">
+        <img class="almendras__caja__img" src="./img/postit.jpg" alt="promociones">
+        <div class="almendras__caja__capa">
+          <h4>Promociones</h4>
+          <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Comprar</a>
+        </div>
+      </div>
+      </div>
+      <div class="frutos">
+        <div class="frutos__caja">
+        <img class="frutos__caja__img" src="./img/Alacena1.jpg" alt="alacena">
+        <div class="frutos__caja__capa">
+          <h4>Almacen</h4>
+          <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Comprar</a>
+        </div>
+        </div>
       </div>
     </div>
-    <div class="almendras">
-      <div class="almendras__capa">
-        <h4>Promociones</h4>
-        <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Comprar</a>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12" >
+            <h1 class="AcercaDeNosotros">acerca de nosotros</h1>
+            <p class="AcercaDeNosotros__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum doloremque alias
+        saepe possimus adipisci omnis at consequuntur aliquam ipsam illo natus laudantium, eveniet distinctio dolore,
+        error voluptatibus rerum dolor, qui aliquid. Numquam itaque doloremque quae non incidunt. Officia ipsam aliquid
+        officiis, doloribus perspiciatis et at iusto quis nisi. Ratione a quia obcaecati animi quisquam esse ipsam
+        explicabo excepturi cum tempore?</p>
+      </div>
       </div>
     </div>
-    <div class="frutos">
-      <div class="frutos__capa">
-        <h4>Almacen</h4>
-        <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Comprar</a>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <h1 class="AcercaDeNosotros">acerca de nosotros</h1>
-    <p class="AcercaDeNosotros__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum doloremque alias
-      saepe possimus adipisci omnis at consequuntur aliquam ipsam illo natus laudantium, eveniet distinctio dolore,
-      error voluptatibus rerum dolor, qui aliquid. Numquam itaque doloremque quae non incidunt. Officia ipsam aliquid
-      officiis, doloribus perspiciatis et at iusto quis nisi. Ratione a quia obcaecati animi quisquam esse ipsam
-      explicabo excepturi cum tempore?</p>
-  </div>
-  <footer class="principal__footer">
-    <ul>
-      <li><a class="principal__footer__link" href=https://www.instagram.com/ target="_blank"><i
-            class="bi bi-instagram"></i></a></li>
-      <li><a class="principal__footer__link" href=https://web.whatsapp.com/ target="_blank"><i
-            class="bi bi-twitter"></i></a></li>
-      <li><a class="principal__footer__link" href=https://www.facebook.com/ target="_blank"><i
-            class="bi bi-facebook"></i></a></li>
-    </ul>
-  </footer>
-  <!--bstrp y wow-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
-  <script src="./js/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
+    <footer class="principal__footer">
+      <ul class="principal__footer__list">
+        <li ><a class="principal__footer__link" href=https://www.instagram.com/ target="_blank"><i
+              class="bi bi-instagram"></i></a></li>
+        <li><a class="principal__footer__link" href=https://web.whatsapp.com/ target="_blank"><i
+              class="bi bi-twitter"></i></a></li>
+        <li><a class="principal__footer__link" href=https://www.facebook.com/ target="_blank"><i
+              class="bi bi-facebook"></i></a></li>
+      </ul>
+    </footer>
+    <!--bstrp y wow-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 </body>
 
 </html>
