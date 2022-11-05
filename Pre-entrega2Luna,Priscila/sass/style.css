@@ -13,7 +13,7 @@
   display: grid;
   grid-template-areas: "navegador__principal navegador__principal navegador__principal" " harinas harinas leche" " frutos almendras  leche";
   grid-template-columns: repeat(3, 32%);
-  grid-template-rows: 7% 45% 45%;
+  grid-template-rows: 10% 48% 45%;
   grid-column-gap: 2px;
   grid-row-gap: 15px;
   height: 100vh;
@@ -26,7 +26,7 @@
   grid-area: navegador__principal;
 }
 
-.harinas, .almendras, .frutos, .leche {
+.harinas {
   grid-area: harinas;
 }
 
@@ -67,7 +67,17 @@
   align-items: center;
 }
 
-.harinas, .almendras, .frutos, .leche {
+.harinas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.harinas__caja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.harinas__caja__capa {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,8 +88,28 @@
   justify-content: center;
   align-items: center;
 }
+.leche__caja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leche__caja__capa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .frutos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.frutos__caja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.frutos__caja__capa {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,6 +118,22 @@
 .almendras {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.almendras__caja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.almendras__caja__capa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.principal__footer__list {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -131,6 +177,29 @@
   align-content: stretch;
 }
 
+/*media queri index*/
+@media screen and (max-width: 576px) {
+  #principal__Grid {
+    grid-template-areas: "navegador__principal" "harinas" "leche" "frutos" "almendras";
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 20% 20% 20%;
+    height: auto;
+    margin-left: none;
+  }
+  .container-fluid {
+    margin-top: 3rem;
+  }
+  .AcercaDeNosotros {
+    margin-top: 2rem;
+  }
+  .AcercaDeNosotros__parrafo {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 20px 20px;
+  }
+}
 .principal {
   background-image: url(../img/marmol-blanco-producto-cuadrado1-47cea21eea4f170d2516578998766752-1024-1024.jpg);
   background-size: cover;
@@ -166,80 +235,134 @@
   border-radius: 20px;
 }
 
-.harinas, .almendras, .frutos, .leche {
-  background-image: url(../img/harinas.jpg);
+.harinas {
   border: 2px solid rgb(10, 129, 53);
-  color: white;
 }
-.harinas__capa {
+.harinas__caja {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.harinas__caja__img {
+  width: 100%;
+  height: 100%;
+}
+.harinas__caja__capa {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 80%;
+  flex-direction: column;
   transition: all 1s ease-out;
-  text-align: center;
-  height: 10rem;
-  width: 20rem;
   opacity: 0;
   color: rgb(6, 92, 6);
 }
-.harinas__capa:hover {
+.harinas__caja__capa:hover {
   opacity: 1;
   margin-top: 50px;
   padding-top: 30px;
+  font-size: 3rem;
+  font-weight: bolder;
 }
 
 .leche {
-  background-image: url(../img/bebidavegetal.jpg);
+  border: 2px solid rgb(10, 129, 53);
 }
-.leche__capa {
+.leche__caja {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.leche__caja__img {
+  width: 100%;
+  height: 100%;
+}
+.leche__caja__capa {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 80%;
+  flex-direction: column;
   transition: all 1s ease-out;
-  text-align: center;
-  height: 10rem;
-  width: 20rem;
   opacity: 0;
   color: rgb(6, 92, 6);
 }
-.leche__capa:hover {
+.leche__caja__capa:hover {
   opacity: 1;
   margin-top: 50px;
   padding-top: 30px;
+  font-size: 3rem;
+  font-weight: bolder;
 }
 
 .frutos {
-  background-image: url(../img/Alacena1.jpg);
+  border: 2px solid rgb(10, 129, 53);
 }
-.frutos__capa {
+.frutos__caja {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.frutos__caja__img {
+  width: 100%;
+  height: 100%;
+}
+.frutos__caja__capa {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 80%;
+  flex-direction: column;
   transition: all 1s ease-out;
-  text-align: center;
-  height: 10rem;
-  width: 20rem;
   opacity: 0;
   color: rgb(6, 92, 6);
 }
-.frutos__capa:hover {
+.frutos__caja__capa:hover {
   opacity: 1;
   margin-top: 50px;
   padding-top: 30px;
+  font-size: 3rem;
+  font-weight: bolder;
 }
 
 .almendras {
-  background-image: url(../img/postit.jpg);
+  border: 2px solid rgb(10, 129, 53);
 }
-.almendras__capa {
+.almendras__caja {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.almendras__caja__img {
+  width: 100%;
+  height: 100%;
+}
+.almendras__caja__capa {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 80%;
+  flex-direction: column;
   transition: all 1s ease-out;
-  text-align: center;
-  height: 10rem;
-  width: 20rem;
   opacity: 0;
   color: rgb(6, 92, 6);
 }
-.almendras__capa:hover {
+.almendras__caja__capa:hover {
   opacity: 1;
   margin-top: 50px;
   padding-top: 30px;
+  font-size: 3rem;
+  font-weight: bolder;
 }
 
 .AcercaDeNosotros {
   text-align: center;
   font-size: 2rem;
-  margin-top: 60px;
+  margin-top: 10rem;
   text-transform: uppercase;
   font-family: "Montserrat Alternates", sans-serif;
 }
@@ -255,6 +378,21 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  border: 2px solid rgb(10, 129, 53);
-  background-color: #f2cd4f;
+  background-color: rgba(242, 204, 79, 0.7254901961);
+}
+.principal__footer__list {
+  list-style: none;
+}
+.principal__footer__link {
+  text-decoration: none;
+  color: #f03828;
+}
+
+.navbar-brand {
+  color: #f68b36;
+  font-weight: bolder;
+}
+
+.nav-link {
+  color: #f03828;
 }/*# sourceMappingURL=style.css.map */

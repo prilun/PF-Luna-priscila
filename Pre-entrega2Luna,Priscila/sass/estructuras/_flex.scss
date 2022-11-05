@@ -7,21 +7,47 @@
 
 .harinas {
    @include flex-center-center;
+   &__caja{
+    @include flex-center-center;
+     &__capa{
+        @include flex-center-center;
+     }
+   }
     
 }
 
 .leche {
 @include flex-center-center;
+&__caja{
+    @include flex-center-center;
+     &__capa{
+        @include flex-center-center;
+     }
+   }
 }
 
 .frutos {
  @include flex-center-center;
+ &__caja{
+    @include flex-center-center;
+     &__capa{
+        @include flex-center-center;
+     }
+   }
 }
 
 .almendras {
     @include flex-center-center;
+    &__caja{
+        @include flex-center-center;
+         &__capa{
+            @include flex-center-center;
+         }
+       }
 }
-
+.principal__footer__list{
+    @include flex-center-space;
+}
 .fondoTienda {
     display: flex;
     flex-direction: column;

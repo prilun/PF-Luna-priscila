@@ -1,0 +1,34 @@
+
+
+/*media queri index*/
+
+@media screen and ( max-width: 576px) {
+    
+    #principal__Grid{
+        grid-template-areas: "navegador__principal"
+                              "harinas"
+                              "leche"
+                             "frutos"
+                             "almendras";
+        grid-template-columns: 100%;
+        grid-template-rows:10% 20% 20% 20%;
+        height: auto;
+        margin-left: none;
+        
+    }
+
+     .container-fluid{
+        margin-top: 3rem;
+     }
+    .AcercaDeNosotros{
+        margin-top: 2rem;
+       &__parrafo{ text-align: center;
+        font-size: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 20px 20px;
+ }
+
+    }
+
+}
