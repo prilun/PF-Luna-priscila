@@ -3,6 +3,7 @@
 @import "./estructuras/grid";
 @import "./base_css/typografia";
 @import "./estructuras/flex";
+@import "./queri/queri";
 
 
 
@@ -60,19 +61,19 @@
     background-image: url(../img/bebidavegetal.jpg);
     @extend .harinas;
     &__capa{
-        @include capa-principal;
-        &:hover{
-            @include hover-capa-principal;
-        }
+       @extend .harinas__capa;
+       &:hover{
+        @include hover-capa-principal;
+       }
     }
-    
+
 }
 
 .frutos {
     background-image:url(../img/Alacena1.jpg);
     @extend .harinas;
     &__capa{
-        @include capa-principal;
+        @extend .harinas__capa;
         &:hover{
             @include hover-capa-principal;
         }
@@ -81,9 +82,9 @@
 
 .almendras {
     background-image: url(../img/postit.jpg);
-    @extend .harinas;
+     @extend .harinas;
     &__capa{
-        @include capa-principal;
+        @extend .harinas__capa;
         &:hover{
             @include hover-capa-principal;
         }
@@ -99,8 +100,6 @@
     &__parrafo{
         text-align: center;
         font-size: 1.5rem;
-        margin-top: 20px;
-        margin-bottom: 30px;
         padding: 20px 20px;
     }
 }
