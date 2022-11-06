@@ -48,36 +48,51 @@
 .principal__footer__list{
     @include flex-center-space;
 }
-.fondoTienda {
-    display: flex;
-    flex-direction: column;
-}
 
-.fondoRecetas {
+/*flex tienda*/
+.fondoTienda {
     display: flex;
     flex-direction: column;
 }
 
 .cuerpo {
     @include flex-center-center;
+    
 }
 
-.promociones a {
+
+
+.promociones__link{
     @include flex-center-center;
 }
 
-.Tienda_listaDos {
-    @include flex-center-center;
+.footerTien__lista {
+    @include flex-space-stretch;
 }
-
+/*pagina recetas*/
+.fondoRecetas{
+    display: flex;
+    flex-direction: column;
+}
 .Flex_Card {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-center-space;
 }
 
-.listaCont {
+
+.fondoRecetas {
     display: flex;
-    justify-content: space-around;
-    align-content: stretch;
+    flex-direction: column;
+}
+
+
+/*contacto*/
+.sectionC{
+    @include flex-center-center;
+}
+.contacto{
+    @include flex-center-space;
+}
+
+.contacto__listaDos{
+    @include flex-center-center;
 }

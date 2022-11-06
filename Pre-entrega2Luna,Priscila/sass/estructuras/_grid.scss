@@ -42,9 +42,9 @@
 #GridContact {
     display: grid;
     grid-template-areas:
-        "nav      section"
-        "nav      section"
-        "nav      footer";
+        "nav_contacto   nav_contacto"
+        "section       section"
+        "footer       footer";
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr 5%;
     height: 100vh;
@@ -52,9 +52,18 @@
 }
 
 .nav_contacto {
-    grid-area: nav;
+    grid-area: nav_contacto;
+}
+
+.sectionC{
+    grid-area: section;
 }
 
 .footer_contacto {
     grid-area: footer;
+}
+
+/*preguntas¨*/
+.preguntas{
+    grid-area: section;
 }

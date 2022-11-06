@@ -9,7 +9,7 @@
      <!---boostrap y css-->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-     <link rel="stylesheet" href="./sass/style.css">
+     <link rel="stylesheet" href="../sass/style.css">
      <!--WOW-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
      <!---tipos de letras-->
@@ -20,35 +20,34 @@
     </head>
 
 <body class="fondoTienda">
-  <div class="container-fluid">
-    <header class="Tienda_header">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"> Copiaa Tienda Veggie</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./tienda.html">Tienda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./recetas.html">Recetas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/preguntas.html">Preguntas Frecuentes</a>
-              </li>
-            </ul>
+    <header class="navegador__principal">
+      <nav class="wow animate__animated animate__backInUp">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <a class="navbar-brand" href="../index.html">Tienda Veggie</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./tienda.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./recetas.html">Recetas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./preguntas.html">Preguntas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
+        </nav>
       </nav>
     </header>
     <section >
@@ -156,17 +155,17 @@
       </section>
   </div>
   <section class="promociones">
-     <a href="#">promociones</a>
-    <p>haz click para ver las ofertas del dia !</p>
+     <a class="promociones__link" href="#">promociones</a>
+     <p class="promociones__parrafo">haz click para ver las ofertas del dia !</p>
     </section>
-  <footer class="footer">
-    <ul class="Tienda_listaDos">
-      <li><a class="lista_item_iconos" href=https://www.instagram.com/ target="_blank"><i
-            class="fa-brands fa-instagram"></i></a></li>
-      <li><a class="lista_item_iconos" href=https://web.whatsapp.com/ target="_blank"><i
-            class="fa-brands fa-whatsapp"></i></a></li>
-      <li><a class="lista_item_iconos" href=https://www.facebook.com/ target="_blank"><i
-            class="fa-brands fa-facebook"></i></a></li>
+  <footer class="footerTien">
+    <ul class="footerTien__lista">
+      <li><a class="footerTien__lista__link" href=https://www.instagram.com/ target="_blank"><i
+        class="bi bi-instagram"></i></a></li>
+      <li><a class="footerTien__lista__link" href=https://web.whatsapp.com/ target="_blank"><i
+        class="bi bi-twitter"></i></a></li>
+      <li><a class="footerTien__lista__link" href=https://www.facebook.com/ target="_blank"><i
+        class="bi bi-facebook"></i></a></li>
     </ul>
   </footer>
     <!--bstrp y wow-->

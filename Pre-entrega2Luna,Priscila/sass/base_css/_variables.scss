@@ -1,4 +1,6 @@
-/*colores*/
+/*colores y tipografia*/
+
+$bg-colorver: #013b0f;
 $bgcolor-basico :#8af92194;
 $color-basico2 :#f68b36;
 $color-basico3 :#f03828;
@@ -7,8 +9,8 @@ $color-footer-principal :#f2cd4f;
 $color-footer-secundario :#f2cc4fb9;
 $border-verde :2px solid rgb(10, 129, 53);
 $letra-secundaria :'Montserrat Alternates', sans-serif;
-$border-8pxwhite:8px outset white;
 $tipografiasecundaria:'Montserrat Alternates', sans-serif; 
+
 /*mixin*/
 
 @mixin flex-center-center {
@@ -21,6 +23,11 @@ $tipografiasecundaria:'Montserrat Alternates', sans-serif;
     display: flex;
     justify-content:space-around;
     align-items:center;
+}
+@mixin flex-space-stretch{
+    display: flex;
+    justify-content: space-around;
+     align-items:stretch;
 }
 @mixin caja-principal {
     height: 100%;
@@ -46,3 +53,4 @@ $tipografiasecundaria:'Montserrat Alternates', sans-serif;
     font-size: 3rem;
     font-weight: bolder;
 }
+

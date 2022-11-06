@@ -26,9 +26,77 @@
         font-size: 1rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        padding: 20px 20px;
- }
-
+        padding: 20px 20px;}
     }
 
+}
+
+/*media queri tienda*/
+  
+@media screen and ( max-width: 768px) {
+    .cuerpo{
+        flex-direction: column;
+        margin-top: 0rem;
+    }
+    
+    .carousel {
+        display: none;
+    }
+
+    .promociones{
+        border-top: 2px solid orangered;
+        &__link {
+            font-size: 10px;
+        }
+    }
+}
+
+/*mediaqueri recetas*/
+@media screen and ( max-width: 900px)  {
+
+    .fondoRecetas{
+        background-color: #044a15a3;
+        background-image:url(../img/marmol-blanco-producto-cuadrado1-47cea21eea4f170d2516578998766752-1024-1024.jpg);
+        background-size: cover;
+        height: auto;
+    }
+       
+
+    .Flex_Card{
+        flex-direction: column;
+        margin-top: none;
+    }
+
+    .recetas_tarjetas{
+        margin-top: 5rem;
+    }
+}
+
+/*mediaqueri contacto y preguntas¨*/
+@media screen and ( max-width: 786px) {
+    #GridContact {
+    display: grid;
+    grid-template-areas:
+        "nav_contacto"
+        " section"
+        " footer";
+    grid-template-columns: auto;
+    grid-template-rows: 15% 5fr 5%;
+   min-height: 100vh;
+    margin: 0;
+}
+ .sectionC{
+    flex-direction: column;
+   
+ }
+ .nav_lista{
+    display: flex;
+
+ }
+
+ fieldset{
+    width: 20px;
+    padding: 20px 20px;
+    transition: all 2s;
+}
 }
