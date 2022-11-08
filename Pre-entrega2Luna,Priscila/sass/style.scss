@@ -1,346 +1,38 @@
 @import "./base_css/resets";
 @import "./base_css/variables";
-@import "./estructuras/grid";
-@import "./base_css/typografia";
-@import "./estructuras/flex";
+@import "./base_css/estructuras/grid";
+@import "./base_css/estructuras/flex";
 @import "./queri/queri";
+@import "./base_css/navbar";
+/*paginas*/
+@import "./estilos/_pagindex";
+@import "./estilos/tienda";
+@import "./estilos/recetas";
+@import "./estilos/preguntas";
+@import "./estilos/contacto";
 
-
-/*pagina principal*/
 
 .principal{
-    background-image: url(../img/marmol-blanco-producto-cuadrado1-47cea21eea4f170d2516578998766752-1024-1024.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    min-height: 100vh;
+    @extend .fondoPreg;
 }
 
-.navegador__principal{
-     
-        font-family:$letra-secundaria;
-        font-size: 1rem;
-        font-style: italic;
-        color:$color-basico2;
-        width: 100%;
-        height: 100px;
-}
-.navegador__listaUno{
-    list-style: none;
-    margin-top: 5px;
-    &__link{
-        text-decoration: none;
-        color: $color-basico3;
-        padding: 20px 10px;
-        font-weight: bolder;
-        height: 100%;
-        &:hover{
-        background-color: $color-basico2;
-        border-radius: 20px;
-        }
-
-
-    }
-}
-
-.harinas{
-   border:$border-verde;
-   &__caja{
-    @include caja-principal;
-     &__img{
-        width: 100%;
-        height: 100%;
-     }
-
-     &__capa{
-        @include capa-principal;
-        }
-    &__capa:hover{
-        @include hover-capa-principal;
-
-    }
-
-
-   }
- 
-}
-.leche { 
-    border:$border-verde;
-    &__caja{
-        @include caja-principal;
-         &__img{
-            width: 100%;
-            height: 100%;
-         }
-    
-         &__capa{
-            @include capa-principal;
-            }
-        &__capa:hover{
-            @include hover-capa-principal;
-    
-        }
-}
-}
-
-.frutos {
-    border:$border-verde;
-    &__caja{
-        @include caja-principal;
-         &__img{
-            width: 100%;
-            height: 100%;
-         }
-    
-         &__capa{
-            @include capa-principal;
-            }
-        &__capa:hover{
-            @include hover-capa-principal;
-    
-        }
-  
-    }
-}
-
-.almendras {
-    border:$border-verde;
-    &__caja{
-        @include caja-principal;
-         &__img{
-            width: 100%;
-            height: 100%;
-         }
-    
-         &__capa{
-            @include capa-principal;
-            }
-        &__capa:hover{
-            @include hover-capa-principal;
-    
-        }
-    }
-}
-
-.AcercaDeNosotros{
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 10rem;
-    text-transform: uppercase;
-    font-family:$tipografiasecundaria;
-
-    &__parrafo{
-        text-align: center;
-        font-size: 1.5rem;
-        padding: 20px 20px;
-    }
-}
-.principal__footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color:$color-footer-secundario;
-    &__list {
-        list-style: none;
-    
-    }
-    &__link{
-        text-decoration: none;
-        color:$color-basico3;
-    }
-}
-
-.navbar-brand{
-    color:$color-basico2;
-    font-weight: bolder;
-    font-family:$tipografiasecundaria;
-    font-size: 100%;
-    font-weight: bolder;
-    text-align: center;
-    font-style: italic;
-    color:#f68b36;
-}
-.nav-link{
-    color:$color-basico3;
-}
-
-
-/*pagina tienda*/
-
-.fondoTienda{
-    background-image: url(../img/marmol-blanco-producto-cuadrado1-47cea21eea4f170d2516578998766752-1024-1024.jpg);
-    background-size: cover;
-    min-height: 100vh;
-    
-}
-
-
-
-.carousel{
-    margin-top: 2rem;
-}
-.carousel h5 , p{
-    color: black;
-}
-.carousel img{
-    height:600px;
-}
-.Tienda_header{
-    background-color:#95f33c94;;
-    border-bottom: 4px outset;
-    width: 100%;
-}
-
-.cuerpo{
-   margin-top: 20px;
-   margin-bottom: 10px;
-   gap: 30px;
-  
-}
-.titulo{
-    text-align: center;
-    margin-top: 10px;
-    color:$bg-colorver;
-}
-
-.promociones{
- height: 200px;
- width: 100%;
- margin-top: 20px;
- background-color: #013b0f;
-     &__link{
-    text-decoration: none;
-    color: wheat;
-    text-transform: uppercase;
-    font-family:$tipografiasecundaria;
-    font-size: 3rem;
-    padding-top: 40px;}
-    &__parrafo{
-        color:wheat;
-        text-align: center;
-    }
-
-    
-
-}
- .footerTien{
-        background-color:#f2cc4fb9;
-        padding: 10px 10px;
-        margin-top: auto;
-        &__lista{
-            list-style: none;
-            height: 20px;
-            width: 100%;
-            border-radius: 4px;
-            padding: 10px 60px;
-        &__link{
-            color:$color-basico3;
-        }
-    }
-    
-    }
-
-/*pagina tiendas*/
-.fondoRecetas{
-    background-image: url(../img/marmol-blanco-producto-cuadrado1-47cea21eea4f170d2516578998766752-1024-1024.jpg);
+.fondoPreg{
+    background-image: url(../img/fondodefinitivo.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    
 }
 
-
-.recetas_tarjetas{
-    box-shadow:6px 5px 5px #f68d3693 ;
+.fondoRecetas{
+    @extend .fondoPreg;
 }
 
-.recetas_tarjetas:hover{
-    transform: translateY(40px);
-}
-
-/*pagima contactos*/
 .fondoCon{
-    background-image: url(../img/fondodefinitivo.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-}
-.nav_contacto{
-    background-color:$bgcolor-basico;
-    border-right: 8px outset white;
-
-   
-  &__titulo{
-    font-family:$tipografiasecundaria;
-    font-size: 180%;
-    text-align: center;
-    font-style: italic;
-    margin-top: 10%;
-    color:$color-basico2;
-    padding: 20px 20px;
-}
-}
-.nav__lista{
-    list-style: none;
-    height: 350px;
-    padding: 30px 30px;
-    line-height: 5rem;
-    text-align: center;
-    
-      &__item{
-        text-decoration: none;
-        background-color:$color-basico2;
-        padding: 20px 20px;
-        border-radius: 2px;
-        color:$color-basico4;
-    }
-}
-.sectionC{
-    
-   height: 100%;
-   width: auto;
-}
-legend{
-    color:$color-basico4;
-    border: $border-verde;
-    width: 19rem;
-    font-size: 100%;
-    font-style: italic;
-    background-color:$bg-colorver;
-    padding: 10px;
+    @extend .fondoPreg;
 }
 
-fieldset{
-    width: 500px;
-    padding: 20px 20px;
-    transition: all 2s;
+.fondoTienda{
+    @extend .fondoPreg;
 }
-fieldset:hover{
-    background-color: #013b0f8d;
-}
-
-.contacto__listaUno{
-    list-style: none;
-    font-family: $letra-secundaria;
-    font-size: 1.5rem;
-    line-height: 2;
-    text-align: center;
-    color: rgba(8, 4, 77, 0.889);
-    &__titulo{
-        text-transform: uppercase;
-        color: #013b0f;
-        font-weight: bolder;
-    }
-}
-
-.contacto__listaDos{
-    list-style: none;
-    background-color:$color-footer-secundario;
-    &__link{
-        padding: 40px 40px;
-        text-transform: none;
-        color:$color-basico3;
-    }
-}
-
-

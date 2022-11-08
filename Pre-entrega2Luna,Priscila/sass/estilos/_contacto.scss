@@ -1,0 +1,55 @@
+
+/*pagima contactos*/
+.fondoCon{
+    position: relative;
+}
+
+.sectionC{
+    margin-top: 5rem;
+   height: 100%;
+   width: auto;
+}
+legend{
+    color:$color-basico4;
+    border: $border-verde;
+    width: 19rem;
+    font-size: 100%;
+    font-style: italic;
+    background-color:$bg-colorver;
+    padding: 10px;
+}
+
+fieldset{
+    width: 500px;
+    padding: 20px 20px;
+    transition: all 2s;
+}
+fieldset:hover{
+    background-color: #013b0f8d;
+}
+
+.contacto__listaUno{
+    list-style: none;
+    font-family: $letra-secundaria;
+    font-size: 1.2rem;
+    line-height: 2;
+    text-align: center;
+    color: rgba(8, 4, 77, 0.889);
+    margin-top: 7rem;
+    padding-top: 2rem;
+    &__titulo{
+        text-transform: uppercase;
+        color: #013b0f;
+        font-weight: bolder;
+    }
+}
+
+.contacto__listaDos{
+    list-style: none;
+    background-color:$color-footer-secundario;
+    &__link{
+        padding: 40px 40px;
+        text-transform: none;
+        color:$color-basico3;
+    }
+}

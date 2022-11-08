@@ -1,0 +1,125 @@
+
+/*pagina principal*/
+
+.principal{
+    position: relative;   
+}
+
+
+.harinas{
+   border:$border-verde;
+   &__caja{
+    @include caja-principal;
+     &__img{
+        width: 100%;
+        height: 100%;
+     }
+
+     &__capa{
+        @include capa-principal;
+        }
+    &__capa:hover{
+        @include hover-capa-principal;
+
+    }
+
+
+   }
+ 
+}
+.leche { 
+    border:$border-verde;
+    &__caja{
+        @include caja-principal;
+         &__img{
+            width: 100%;
+            height: 100%;
+         }
+    
+         &__capa{
+            @include capa-principal;
+            }
+        &__capa:hover{
+            @include hover-capa-principal;
+    
+        }
+}
+}
+
+.frutos {
+    border:$border-verde;
+    &__caja{
+        @include caja-principal;
+         &__img{
+            width: 100%;
+            height: 100%;
+         }
+    
+         &__capa{
+            @include capa-principal;
+            }
+        &__capa:hover{
+            @include hover-capa-principal;
+    
+        }
+  
+    }
+}
+
+.almendras {
+    border:$border-verde;
+    &__caja{
+        @include caja-principal;
+         &__img{
+            width: 100%;
+            height: 100%;
+         }
+    
+         &__capa{
+            @include capa-principal;
+            }
+        &__capa:hover{
+            @include hover-capa-principal;
+    
+        }
+    }
+}
+
+.AcercaDeNosotros{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5rem;
+    text-transform: uppercase;
+    font-family:$tipografiasecundaria;
+
+    &__parrafo{
+        text-align: center;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.AcercaDeNosotros__icono{
+    padding: 10px 10px;
+    text-align: center;
+    &__parrafo{
+        text-align: center;
+        padding-bottom: 20px;
+        color:orangered;
+        font-size: 1.2rem;
+    }
+}
+.principal__footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color:$color-footer-secundario;
+    &__list {
+        list-style: none;
+    
+    }
+    &__link{
+        text-decoration: none;
+        color:$color-basico3;
+    }
+}
