@@ -172,7 +172,7 @@
 }
 
 /*pagina recetas*/
-.fondoRecetas, .fondoTienda {
+.fondoRecetas {
   display: flex;
   flex-direction: column;
 }
@@ -230,32 +230,23 @@
   .cuerpo {
     flex-direction: column;
   }
-  .titulo {
+  .animate__animated {
+    border: 2px solid rgb(10, 129, 53);
+  }
+  .tienda__titulo {
     color: rebeccapurple;
-    margin-top: 100rem;
+    border: 2px solid rgb(10, 129, 53);
+    padding: 30px 30px;
+    margin-top: 50rem;
   }
   .carousel {
     display: none;
   }
-}
-/*mediaqueri recetas*/
-@media screen and (max-width: 900px) {
-  .fondoRecetas, .fondoTienda {
-    background-color: rgba(4, 74, 21, 0.6392156863);
-    background-image: url(../img/marmol-blanco-producto-cuadrado1-47cea21eea4f170d2516578998766752-1024-1024.jpg);
-    background-size: cover;
-    height: auto;
+  .promociones__link {
+    color: black;
+    font-size: 1rem;
   }
-  .Flex_Card {
-    flex-direction: column;
-    margin-top: none;
-  }
-  .recetas_tarjetas {
-    margin-top: 20rem;
-  }
-}
-/*mediaqueri contacto */
-@media screen and (max-width: 786px) {
+  /*mediaqueri contacto */
   #GridContact {
     display: grid;
     grid-template-areas: "nav_contacto" " section" " footer";
@@ -271,6 +262,27 @@
     width: 10px;
     padding: 20px 20px;
     transition: none;
+  }
+}
+/*mediaqueri recetas*/
+@media screen and (max-width: 900px) {
+  .fondoRecetas {
+    background-color: rgba(4, 74, 21, 0.6392156863);
+    background-image: none;
+    background-size: cover;
+    height: auto;
+  }
+  .Flex_Card {
+    flex-direction: column;
+  }
+  .fieldset {
+    transition: none;
+  }
+  .recetas_tarjetas {
+    margin-top: 20rem;
+  }
+  .sectionC {
+    margin-top: 1rem;
   }
 }
 .navbar {
@@ -474,19 +486,13 @@
   height: 600px;
 }
 
-.Tienda_header {
-  background-color: rgba(149, 243, 60, 0.5803921569);
-  border-bottom: 4px outset;
-  width: 100%;
-}
-
 .cuerpo {
   margin-top: 20px;
   margin-bottom: 10px;
   gap: 30px;
 }
 
-.titulo {
+.tienda__titulo {
   text-align: center;
   margin-top: 10px;
   color: #013b0f;
@@ -608,10 +614,14 @@ fieldset:hover {
   min-height: 100vh;
 }
 
-.fondoRecetas, .fondoTienda {
-  background-image: url(../img/textura-de-mármol-blanca-para-el-fondo-y-diseño-110892783.jpg);
+.fondoRecetas {
+  background-image: url(../img/marmol-blanco-producto-cuadrado1-47cea21eea4f170d2516578998766752-1024-1024.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+}
+
+.fondoTienda {
+  background-image: url(../img/marmol-blanco-producto-cuadrado1-47cea21eea4f170d2516578998766752-1024-1024.jpg);
 }/*# sourceMappingURL=style.css.map */

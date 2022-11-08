@@ -31,51 +31,36 @@
 }
 /*media queri tienda*/
   
-@media screen and( max-width: 768px) {
+@media screen and ( max-width: 768px) {
 
     .cuerpo{
         flex-direction: column;
-       
+        
     }
-    .titulo{
+
+   
+    .animate__animated{
+       border: $border-verde;
+    }
+    .tienda__titulo{
         color:rebeccapurple;
-        margin-top: 100rem;
+        border:$border-verde;
+        padding:30px 30px;
+        margin-top: 50rem;
      }
     
     .carousel {
         display: none;
     }
 
-}
-
-
-
-/*mediaqueri recetas*/
-
-
-@media screen and ( max-width: 900px)  {
-
-    .fondoRecetas{
-        background-color: #044a15a3;
-        background-image:url(../img/marmol-blanco-producto-cuadrado1-47cea21eea4f170d2516578998766752-1024-1024.jpg);
-        background-size: cover;
-        height: auto;
-    }
-       
-
-    .Flex_Card{
-        flex-direction: column;
-        margin-top: none;
+    .promociones{
+        &__link{
+            color:black;
+            font-size: 1rem;
+        }
     }
 
-    .recetas_tarjetas{
-        margin-top: 20rem;
-    }
-}
-
-/*mediaqueri contacto */
-
-@media screen and ( max-width: 786px) {
+    /*mediaqueri contacto */
     #GridContact {
     display: grid;
     grid-template-areas:
@@ -99,4 +84,39 @@
     transition: none
 }
 }
+
+
+
+
+
+/*mediaqueri recetas*/
+
+
+@media screen and ( max-width: 900px)  {
+
+    .fondoRecetas{
+        background-color: #044a15a3;
+        background-image:none;
+        background-size: cover;
+        height: auto;
+    }
+       
+
+    .Flex_Card{
+        flex-direction: column;
+
+    }
+
+    .fieldset{
+        transition: none;
+    }
+
+    .recetas_tarjetas{
+        margin-top: 20rem;
+    }
+    .sectionC{
+        margin-top: 1rem;
+    }
+} 
+
 
