@@ -28,10 +28,7 @@
         margin-bottom: 2rem;
         padding: 20px 20px;}
     }
-   
-
 }
-
 /*media queri tienda*/
   
 @media screen and( max-width: 768px) {
@@ -48,9 +45,14 @@
     .carousel {
         display: none;
     }
+
 }
 
+
+
 /*mediaqueri recetas*/
+
+
 @media screen and ( max-width: 900px)  {
 
     .fondoRecetas{
@@ -67,7 +69,7 @@
     }
 
     .recetas_tarjetas{
-        margin-top: 5rem;
+        margin-top: 20rem;
     }
 }
 
