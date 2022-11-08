@@ -26,8 +26,8 @@
 }
 
 .fondoRecetas{
-    background-image: url(../img/textura-de-mármol-blanca-para-el-fondo-y-diseño-110892783.jpg);
-    background-position: center;
+    background-image: url(../img/marmol-blanco-producto-cuadrado1-47cea21eea4f170d2516578998766752-1024-1024.jpg);
+    background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -38,5 +38,5 @@
 }
 
 .fondoTienda{
-    @extend .fondoRecetas;
+    background-image: url(../img/marmol-blanco-producto-cuadrado1-47cea21eea4f170d2516578998766752-1024-1024.jpg);
 }
