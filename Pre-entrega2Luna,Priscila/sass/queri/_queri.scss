@@ -20,6 +20,7 @@
      .container-fluid{
         margin-top: 3rem;
      }
+
     .AcercaDeNosotros{
         margin-top: 2rem;
        &__parrafo{ text-align: center;
@@ -32,19 +33,11 @@
 /*media queri tienda*/
   
 @media screen and ( max-width: 768px) {
-
     .cuerpo{
         flex-direction: column;
         
     }
-
-   
-    .animate__animated{
-       border: $border-verde;
-    }
     .tienda__titulo{
-        color:rebeccapurple;
-        border:$border-verde;
         padding:30px 30px;
         margin-top: 50rem;
      }
@@ -58,6 +51,9 @@
             color:black;
             font-size: 1rem;
         }
+        &__parrafo{
+           color: black; 
+        }
     }
 
     /*mediaqueri contacto */
@@ -67,7 +63,7 @@
         "nav_contacto"
         " section"
         " footer";
-    grid-template-columns: 70%;
+    grid-template-columns: 95%;
     grid-template-rows: 15% 5fr 5%;
    min-height: 100vh;
     margin: 0;
@@ -79,17 +75,11 @@
 
 
  fieldset{
-    width: 10px;
+    width: 5px;
     padding: 20px 20px;
     transition: none
 }
 }
-
-
-
-
-
-/*mediaqueri recetas*/
 
 
 @media screen and ( max-width: 900px)  {
@@ -111,12 +101,8 @@
         transition: none;
     }
 
-    .recetas_tarjetas{
-        margin-top: 20rem;
-    }
-    .sectionC{
-        margin-top: 1rem;
-    }
+   
+
 } 
 
 

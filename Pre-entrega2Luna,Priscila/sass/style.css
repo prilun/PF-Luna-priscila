@@ -151,6 +151,7 @@
 .fondoTienda {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .cuerpo {
@@ -230,12 +231,7 @@
   .cuerpo {
     flex-direction: column;
   }
-  .animate__animated {
-    border: 2px solid rgb(10, 129, 53);
-  }
   .tienda__titulo {
-    color: rebeccapurple;
-    border: 2px solid rgb(10, 129, 53);
     padding: 30px 30px;
     margin-top: 50rem;
   }
@@ -246,11 +242,14 @@
     color: black;
     font-size: 1rem;
   }
+  .promociones__parrafo {
+    color: black;
+  }
   /*mediaqueri contacto */
   #GridContact {
     display: grid;
     grid-template-areas: "nav_contacto" " section" " footer";
-    grid-template-columns: 70%;
+    grid-template-columns: 95%;
     grid-template-rows: 15% 5fr 5%;
     min-height: 100vh;
     margin: 0;
@@ -259,12 +258,11 @@
     flex-direction: column;
   }
   fieldset {
-    width: 10px;
+    width: 5px;
     padding: 20px 20px;
     transition: none;
   }
 }
-/*mediaqueri recetas*/
 @media screen and (max-width: 900px) {
   .fondoRecetas {
     background-color: rgba(4, 74, 21, 0.6392156863);
@@ -277,12 +275,6 @@
   }
   .fieldset {
     transition: none;
-  }
-  .recetas_tarjetas {
-    margin-top: 20rem;
-  }
-  .sectionC {
-    margin-top: 1rem;
   }
 }
 .navbar {
@@ -536,7 +528,7 @@
 /*pagina recetas*/
 .recetas_tarjetas {
   box-shadow: 6px 5px 5px rgba(246, 141, 54, 0.5764705882);
-  margin-top: 8rem;
+  margin-top: 3rem;
 }
 
 .recetas_tarjetas:hover {
@@ -620,6 +612,7 @@ fieldset:hover {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  position: relative;
 }
 
 .fondoTienda {
