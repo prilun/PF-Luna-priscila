@@ -141,7 +141,7 @@
   align-items: center;
 }
 
-.principal__footer__list {
+.principal__footer__list, .recetas__footer__list {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -203,80 +203,6 @@
   align-items: center;
 }
 
-/*media queri index*/
-@media screen and (max-width: 576px) {
-  #principal__Grid {
-    grid-template-areas: "navegador__principal" "harinas" "leche" "frutos" "almendras";
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 20% 20% 20%;
-    height: auto;
-    margin-left: none;
-  }
-  .container-fluid {
-    margin-top: 3rem;
-  }
-  .AcercaDeNosotros {
-    margin-top: 2rem;
-  }
-  .AcercaDeNosotros__parrafo {
-    text-align: center;
-    font-size: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding: 20px 20px;
-  }
-}
-/*media queri tienda*/
-@media screen and (max-width: 768px) {
-  .cuerpo {
-    flex-direction: column;
-  }
-  .tienda__titulo {
-    padding: 30px 30px;
-    margin-top: 50rem;
-  }
-  .carousel {
-    display: none;
-  }
-  .promociones__link {
-    color: black;
-    font-size: 1rem;
-  }
-  .promociones__parrafo {
-    color: black;
-  }
-  /*mediaqueri contacto */
-  #GridContact {
-    display: grid;
-    grid-template-areas: "nav_contacto" " section" " footer";
-    grid-template-columns: 95%;
-    grid-template-rows: 15% 5fr 5%;
-    min-height: 100vh;
-    margin: 0;
-  }
-  .sectionC {
-    flex-direction: column;
-  }
-  fieldset {
-    width: 5px;
-    padding: 20px 20px;
-    transition: none;
-  }
-}
-@media screen and (max-width: 900px) {
-  .fondoRecetas {
-    background-color: rgba(4, 74, 21, 0.6392156863);
-    background-image: none;
-    background-size: cover;
-    height: auto;
-  }
-  .Flex_Card {
-    flex-direction: column;
-  }
-  .fieldset {
-    transition: none;
-  }
-}
 .navbar {
   background-color: rgba(242, 204, 79, 0.7254901961);
 }
@@ -295,6 +221,36 @@
 
 .offcanvas-title, .nav-link {
   color: white;
+}
+
+/*footer pricipal*/
+.principal__footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(242, 204, 79, 0.7254901961);
+}
+.principal__footer__list, .recetas__footer__list {
+  list-style: none;
+}
+.principal__footer__link {
+  text-decoration: none;
+  color: #f03828;
+}
+
+/*footer recetas*/
+.recetas__footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(242, 204, 79, 0.7254901961);
+}
+.recetas__footer__list {
+  list-style: none;
+}
+.recetas__footer__link {
+  text-decoration: none;
+  color: #f03828;
 }
 
 /*paginas*/
@@ -451,20 +407,6 @@
   font-size: 1.2rem;
 }
 
-.principal__footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(242, 204, 79, 0.7254901961);
-}
-.principal__footer__list {
-  list-style: none;
-}
-.principal__footer__link {
-  text-decoration: none;
-  color: #f03828;
-}
-
 /*pagina tienda*/
 .carousel {
   margin-top: 2rem;
@@ -494,7 +436,7 @@
   height: 200px;
   width: 100%;
   margin-top: 20px;
-  background-color: #013b0f;
+  border: 2px solid rgb(10, 129, 53);
 }
 .promociones__link {
   text-decoration: none;
@@ -598,6 +540,83 @@ fieldset:hover {
   color: #f03828;
 }
 
+/*queri*/
+/*media queri index*/
+@media screen and (max-width: 576px) {
+  #principal__Grid {
+    grid-template-areas: "navegador__principal" "harinas" "leche" "frutos" "almendras";
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 20% 20% 20%;
+    height: auto;
+    margin-left: none;
+  }
+  .container-fluid {
+    margin-top: 3rem;
+  }
+  .AcercaDeNosotros {
+    margin-top: 2rem;
+  }
+  .AcercaDeNosotros__parrafo {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 20px 20px;
+  }
+}
+/*media queri tienda*/
+@media screen and (max-width: 768px) {
+  .cuerpo {
+    flex-direction: column;
+  }
+  .tienda__titulo {
+    padding: 30px 30px;
+  }
+  .carousel {
+    display: none;
+  }
+  .promociones__link {
+    color: green;
+    font-size: 1.5rem;
+  }
+  .promociones__parrafo {
+    color: black;
+  }
+  /*mediaqueri contacto */
+  #GridContact {
+    display: grid;
+    grid-template-areas: "nav_contacto" " section" " footer";
+    grid-template-columns: 95%;
+    grid-template-rows: 15% 5fr 5%;
+    min-height: 100vh;
+    margin: 0;
+  }
+  .sectionC {
+    flex-direction: column;
+  }
+  fieldset {
+    width: 5px;
+    padding: 20px 20px;
+    transition: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .fondoRecetas {
+    background-color: rgba(4, 74, 21, 0.6392156863);
+    background-image: none;
+    background-size: cover;
+    height: auto;
+  }
+  .Flex_Card {
+    flex-direction: column;
+  }
+  .fieldset {
+    transition: none;
+  }
+  .recetas__footer {
+    display: none;
+  }
+}
 .fondoPreg, .fondoCon, .principal {
   background-image: url(../img/fondodefinitivo.webp);
   background-position: center;

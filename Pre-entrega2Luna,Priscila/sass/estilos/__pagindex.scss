@@ -109,17 +109,3 @@
         font-size: 1.2rem;
     }
 }
-.principal__footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color:$color-footer-secundario;
-    &__list {
-        list-style: none;
-    
-    }
-    &__link{
-        text-decoration: none;
-        color:$color-basico3;
-    }
-}

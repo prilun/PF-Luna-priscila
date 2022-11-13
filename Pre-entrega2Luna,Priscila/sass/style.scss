@@ -2,14 +2,16 @@
 @import "./base_css/variables";
 @import "./base_css/estructuras/grid";
 @import "./base_css/estructuras/flex";
-@import "./queri/queri";
-@import "./base_css/navbar";
+@import "./base_css/navfoot";
 /*paginas*/
 @import "./estilos/_pagindex";
 @import "./estilos/tienda";
 @import "./estilos/recetas";
 @import "./estilos/preguntas";
 @import "./estilos/contacto";
+
+/*queri*/
+@import "./queri/queri";
 
 
 .principal{

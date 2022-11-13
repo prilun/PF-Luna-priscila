@@ -1,0 +1,58 @@
+
+.navbar{
+    background-color:$color-footer-secundario;
+}
+
+.navbar-brand{
+    color:$bg-colorver;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.offcanvas{
+    background-color:$color-footer-secundario;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.offcanvas-title{
+    color:$color-basico4;
+}
+
+.nav-link{
+    @extend .offcanvas-title;
+}
+
+/*footer pricipal*/
+.principal__footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color:$color-footer-secundario;
+    &__list {
+        list-style: none;
+    
+    }
+    &__link{
+        text-decoration: none;
+        color:$color-basico3;
+    }
+}
+
+/*footer recetas*/
+
+.recetas__footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color:$color-footer-secundario;
+    &__list {
+        list-style: none;
+    
+    }
+    &__link{
+        text-decoration: none;
+        color:$color-basico3;
+      
+}
+}

@@ -49,6 +49,9 @@
     @include flex-center-space;
 }
 
+.recetas__footer__list{
+    @extend .principal__footer__list;
+}
 /*flex tienda*/
 .fondoTienda {
     display: flex;

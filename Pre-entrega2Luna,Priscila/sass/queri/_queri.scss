@@ -39,7 +39,7 @@
     }
     .tienda__titulo{
         padding:30px 30px;
-        margin-top: 50rem;
+       
      }
     
     .carousel {
@@ -48,8 +48,8 @@
 
     .promociones{
         &__link{
-            color:black;
-            font-size: 1rem;
+            color:green;
+            font-size: 1.5rem;
         }
         &__parrafo{
            color: black; 
@@ -101,7 +101,9 @@
         transition: none;
     }
 
-   
+    .recetas__footer{
+         display: none;
+   }
 
 } 
 
