@@ -2,14 +2,10 @@
 
 /*pagina tienda*/
 
-
-
-
-.carousel{
-    margin-top: 2rem;
-}
 .carousel h5 , p{
-    color: black;
+    color:$color-basico2;
+    font-weight: bolder;
+    
 }
 .carousel img{
     height:600px;
@@ -25,17 +21,19 @@
 .tienda__titulo{
     text-align: center;
     margin-top: 10px;
-    color:$bg-colorver;
+    color:$colornaran;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
 .promociones{
  height: 200px;
  width: 100%;
  margin-top: 20px;
-border:$border-verde;
+ background-color:$bgcolor-basico;
      &__link{
     text-decoration: none;
-    color: wheat;
+    color:$colornaran;
     text-transform: uppercase;
     font-family:$tipografiasecundaria;
     font-size: 3rem;
@@ -43,7 +41,7 @@ border:$border-verde;
    
 }
     &__parrafo{
-        color:wheat;
+        color:$colornaran;
         text-align: center;
        
     }
@@ -51,19 +49,3 @@ border:$border-verde;
     
 
 }
- .footerTien{
-        background-color:#f2cc4fb9;
-        padding: 10px 10px;
-        margin-top: auto;
-        &__lista{
-            list-style: none;
-            height: 20px;
-            width: 100%;
-            border-radius: 4px;
-            padding: 10px 60px;
-        &__link{
-            color:$color-basico3;
-        }
-    }
-    
-    }

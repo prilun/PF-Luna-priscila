@@ -43,18 +43,22 @@
     display: grid;
     grid-template-areas:
         "nav_contacto   nav_contacto"
-        "section       section"
+        "section       listaCont"
         "footer       footer";
     grid-template-columns: repeat(2,50%);
-    grid-template-rows: 1fr 5fr 5%;
+    grid-template-rows: 12% 83% 5%;
     height: 100vh;
     margin: 0;
 }
+
 
 .nav_contacto {
     grid-area: nav_contacto;
 }
 
+.listaCont{
+    grid-area: listaCont;
+}
 .sectionC{
     grid-area: section;
 }

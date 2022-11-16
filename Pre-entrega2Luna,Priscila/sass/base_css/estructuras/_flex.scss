@@ -86,8 +86,11 @@
 
 
 /*contacto*/
-.sectionC{
-    @include flex-center-center;
+
+.listaCont{
+    display: flex;
+    justify-items:center;
+    align-items:center;
 }
 .contacto{
     @include flex-center-space;

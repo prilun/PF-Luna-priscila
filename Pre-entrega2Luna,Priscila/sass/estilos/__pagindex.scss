@@ -7,7 +7,7 @@
 
 
 .harinas{
-   border:$border-verde;
+   border:$border-naran;
    &__caja{
     @include caja-principal;
      &__img{
@@ -28,7 +28,7 @@
  
 }
 .leche { 
-    border:$border-verde;
+    border:$border-naran;
     &__caja{
         @include caja-principal;
          &__img{
@@ -47,7 +47,7 @@
 }
 
 .frutos {
-    border:$border-verde;
+    border:$border-naran;
     &__caja{
         @include caja-principal;
          &__img{
@@ -67,7 +67,7 @@
 }
 
 .almendras {
-    border:$border-verde;
+    border:$border-naran;
     &__caja{
         @include caja-principal;
          &__img{
@@ -91,21 +91,23 @@
     margin-top: 5rem;
     text-transform: uppercase;
     font-family:$tipografiasecundaria;
-
+    color:$color-basico4;
     &__parrafo{
         text-align: center;
         font-size: 1.5rem;
         padding-bottom: 1rem;
+        color: $color-basico4;
     }
 }
 
 .AcercaDeNosotros__icono{
     padding: 10px 10px;
     text-align: center;
+    color: $colornaran;
     &__parrafo{
         text-align: center;
         padding-bottom: 20px;
-        color:orangered;
+        color:$colornaran;
         font-size: 1.2rem;
     }
 }

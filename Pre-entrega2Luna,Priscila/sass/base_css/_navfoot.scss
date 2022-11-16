@@ -1,22 +1,21 @@
 
 .navbar{
-    background-color:$color-footer-secundario;
+    background-color:$color-navbar;
 }
-
 .navbar-brand{
-    color:$bg-colorver;
+    color:$color-basico3;
     font-weight: bolder;
     font-size: 2rem;
 }
 
 .offcanvas{
-    background-color:$color-footer-secundario;
+    background-color:$color-navbar;
     font-weight: bolder;
     font-size: 1.2rem;
 }
 
 .offcanvas-title{
-    color:$color-basico4;
+    color:$color-basico3;
 }
 
 .nav-link{
@@ -28,7 +27,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color:$color-footer-secundario;
+    background-color:$color-navbar;
     &__list {
         list-style: none;
     
@@ -38,14 +37,30 @@
         color:$color-basico3;
     }
 }
+/*footer tienda*/
+.footerTien{
+    background-color:$color-navbar;
+    padding: 10px 10px;
+    margin-top: auto;
+    &__lista{
+        list-style: none;
+        height: 20px;
+        width: 100%;
+        border-radius: 4px;
+        padding: 10px 60px;
+    &__link{
+        color:$color-basico3;
+    }
+}
 
+}
 /*footer recetas*/
 
 .recetas__footer{
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color:$color-footer-secundario;
+    background-color:$color-navbar;
     &__list {
         list-style: none;
     

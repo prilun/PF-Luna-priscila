@@ -46,15 +46,19 @@
 /*GRID contactos*/
 #GridContact {
   display: grid;
-  grid-template-areas: "nav_contacto   nav_contacto" "section       section" "footer       footer";
+  grid-template-areas: "nav_contacto   nav_contacto" "section       listaCont" "footer       footer";
   grid-template-columns: repeat(2, 50%);
-  grid-template-rows: 1fr 5fr 5%;
+  grid-template-rows: 12% 83% 5%;
   height: 100vh;
   margin: 0;
 }
 
 .nav_contacto {
   grid-area: nav_contacto;
+}
+
+.listaCont {
+  grid-area: listaCont;
 }
 
 .sectionC {
@@ -185,9 +189,9 @@
 }
 
 /*contacto*/
-.sectionC {
+.listaCont {
   display: flex;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
 }
 
@@ -204,23 +208,23 @@
 }
 
 .navbar {
-  background-color: rgba(242, 204, 79, 0.7254901961);
+  background-color: rgba(12, 128, 6, 0.7333333333);
 }
 
 .navbar-brand {
-  color: #013b0f;
+  color: #99f681;
   font-weight: bolder;
   font-size: 2rem;
 }
 
 .offcanvas {
-  background-color: rgba(242, 204, 79, 0.7254901961);
+  background-color: rgba(12, 128, 6, 0.7333333333);
   font-weight: bolder;
   font-size: 1.2rem;
 }
 
 .offcanvas-title, .nav-link {
-  color: white;
+  color: #99f681;
 }
 
 /*footer pricipal*/
@@ -228,14 +232,31 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: rgba(242, 204, 79, 0.7254901961);
+  background-color: rgba(12, 128, 6, 0.7333333333);
 }
 .principal__footer__list, .recetas__footer__list {
   list-style: none;
 }
 .principal__footer__link {
   text-decoration: none;
-  color: #f03828;
+  color: #99f681;
+}
+
+/*footer tienda*/
+.footerTien {
+  background-color: rgba(12, 128, 6, 0.7333333333);
+  padding: 10px 10px;
+  margin-top: auto;
+}
+.footerTien__lista {
+  list-style: none;
+  height: 20px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px 60px;
+}
+.footerTien__lista__link {
+  color: #99f681;
 }
 
 /*footer recetas*/
@@ -243,14 +264,14 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: rgba(242, 204, 79, 0.7254901961);
+  background-color: rgba(12, 128, 6, 0.7333333333);
 }
 .recetas__footer__list {
   list-style: none;
 }
 .recetas__footer__link {
   text-decoration: none;
-  color: #f03828;
+  color: #99f681;
 }
 
 /*paginas*/
@@ -260,7 +281,7 @@
 }
 
 .harinas {
-  border: 2px solid rgb(10, 129, 53);
+  border: 3px solid #f6a93e;
 }
 .harinas__caja {
   height: 100%;
@@ -291,7 +312,7 @@
 }
 
 .leche {
-  border: 2px solid rgb(10, 129, 53);
+  border: 3px solid #f6a93e;
 }
 .leche__caja {
   height: 100%;
@@ -322,7 +343,7 @@
 }
 
 .frutos {
-  border: 2px solid rgb(10, 129, 53);
+  border: 3px solid #f6a93e;
 }
 .frutos__caja {
   height: 100%;
@@ -353,7 +374,7 @@
 }
 
 .almendras {
-  border: 2px solid rgb(10, 129, 53);
+  border: 3px solid #f6a93e;
 }
 .almendras__caja {
   height: 100%;
@@ -389,31 +410,31 @@
   margin-top: 5rem;
   text-transform: uppercase;
   font-family: "Montserrat Alternates", sans-serif;
+  color: white;
 }
 .AcercaDeNosotros__parrafo {
   text-align: center;
   font-size: 1.5rem;
   padding-bottom: 1rem;
+  color: white;
 }
 
 .AcercaDeNosotros__icono {
   padding: 10px 10px;
   text-align: center;
+  color: #f6a93e;
 }
 .AcercaDeNosotros__icono__parrafo {
   text-align: center;
   padding-bottom: 20px;
-  color: orangered;
+  color: #f6a93e;
   font-size: 1.2rem;
 }
 
 /*pagina tienda*/
-.carousel {
-  margin-top: 2rem;
-}
-
 .carousel h5, p {
-  color: black;
+  color: #a12416;
+  font-weight: bolder;
 }
 
 .carousel img {
@@ -429,42 +450,28 @@
 .tienda__titulo {
   text-align: center;
   margin-top: 10px;
-  color: #013b0f;
+  color: #f6a93e;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 
 .promociones {
   height: 200px;
   width: 100%;
   margin-top: 20px;
-  border: 2px solid rgb(10, 129, 53);
+  background-color: rgba(138, 249, 33, 0.5803921569);
 }
 .promociones__link {
   text-decoration: none;
-  color: wheat;
+  color: #f6a93e;
   text-transform: uppercase;
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 3rem;
   padding-top: 40px;
 }
 .promociones__parrafo {
-  color: wheat;
+  color: #f6a93e;
   text-align: center;
-}
-
-.footerTien {
-  background-color: rgba(242, 204, 79, 0.7254901961);
-  padding: 10px 10px;
-  margin-top: auto;
-}
-.footerTien__lista {
-  list-style: none;
-  height: 20px;
-  width: 100%;
-  border-radius: 4px;
-  padding: 10px 60px;
-}
-.footerTien__lista__link {
-  color: #f03828;
 }
 
 /*pagina recetas*/
@@ -480,7 +487,7 @@
 /*preguntas*/
 .preguntas {
   padding-top: 6rem;
-  color: red;
+  color: #f6a93e;
 }
 
 /*pagima contactos*/
@@ -489,29 +496,23 @@
 }
 
 .sectionC {
-  margin-top: 5rem;
+  margin-top: 1rem;
   height: 100%;
   width: auto;
 }
 
 legend {
   color: white;
-  border: 2px solid rgb(10, 129, 53);
+  border: 2px solid #369d2a;
   width: 19rem;
   font-size: 100%;
   font-style: italic;
-  background-color: #013b0f;
+  background-color: #95a131;
   padding: 10px;
 }
 
 fieldset {
-  width: 500px;
   padding: 20px 20px;
-  transition: all 2s;
-}
-
-fieldset:hover {
-  background-color: rgba(1, 59, 15, 0.5529411765);
 }
 
 .contacto__listaUno {
@@ -520,24 +521,22 @@ fieldset:hover {
   font-size: 1.2rem;
   line-height: 2;
   text-align: center;
-  color: rgba(8, 4, 77, 0.889);
-  margin-top: 7rem;
-  padding-top: 2rem;
+  color: white;
 }
 .contacto__listaUno__titulo {
   text-transform: uppercase;
-  color: #013b0f;
+  color: rgba(12, 128, 6, 0.7333333333);
   font-weight: bolder;
 }
 
 .contacto__listaDos {
   list-style: none;
-  background-color: rgba(242, 204, 79, 0.7254901961);
+  background-color: rgba(12, 128, 6, 0.7333333333);
 }
 .contacto__listaDos__link {
   padding: 40px 40px;
   text-transform: none;
-  color: #f03828;
+  color: #99f681;
 }
 
 /*queri*/
@@ -585,19 +584,31 @@ fieldset:hover {
   /*mediaqueri contacto */
   #GridContact {
     display: grid;
-    grid-template-areas: "nav_contacto" " section" " footer";
-    grid-template-columns: 95%;
-    grid-template-rows: 15% 5fr 5%;
-    min-height: 100vh;
+    grid-template-areas: "nav_contacto " "section   " " listaCont" "footer  ";
+    grid-template-columns: auto;
+    grid-template-rows: 22% auto auto;
+    height: 100vh;
     margin: 0;
   }
-  .sectionC {
-    flex-direction: column;
-  }
   fieldset {
-    width: 5px;
-    padding: 20px 20px;
-    transition: none;
+    width: 90%;
+    padding: none;
+  }
+  .listaCont {
+    transition: all 2s;
+  }
+  .listaCont:hover {
+    background-color: orange;
+  }
+  .sectionC {
+    width: 90%;
+    height: 90%;
+  }
+  .contacto__listaUno {
+    text-align: start;
+  }
+  .contacto__listaUno__titulo {
+    text-align: center;
   }
 }
 @media screen and (max-width: 900px) {
@@ -610,15 +621,20 @@ fieldset:hover {
   .Flex_Card {
     flex-direction: column;
   }
-  .fieldset {
-    transition: none;
-  }
   .recetas__footer {
     display: none;
   }
 }
-.fondoPreg, .fondoCon, .principal {
-  background-image: url(../img/fondodefinitivo.webp);
+.principal {
+  background-image: url(../img/lettuce-ga2b64e7d7_1920.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.fondoPreg, .fondoCon {
+  background-image: url(../img/autumn-g97ccd2e21_1280.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

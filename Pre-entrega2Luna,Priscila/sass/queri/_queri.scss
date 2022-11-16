@@ -58,26 +58,38 @@
 
     /*mediaqueri contacto */
     #GridContact {
-    display: grid;
-    grid-template-areas:
-        "nav_contacto"
-        " section"
-        " footer";
-    grid-template-columns: 95%;
-    grid-template-rows: 15% 5fr 5%;
-   min-height: 100vh;
-    margin: 0;
-}
- .sectionC{
-    flex-direction: column;
-   
- }
-
+        display: grid;
+        grid-template-areas:
+            "nav_contacto "
+            "section   "
+            " listaCont"
+            "footer  ";
+    grid-template-columns: auto;
+    grid-template-rows: 22% auto auto;
+        height: 100vh;
+        margin: 0;
+    }
 
  fieldset{
-    width: 5px;
-    padding: 20px 20px;
-    transition: none
+    width:90%;
+    padding: none; 
+}
+.listaCont{
+    transition: all 2s;
+
+}
+.listaCont:hover{
+    background-color: orange;
+}
+.sectionC{
+  width: 90%;
+  height: 90%;
+}
+.contacto__listaUno{
+    text-align: start;
+    &__titulo{
+        text-align: center;
+    }
 }
 }
 
@@ -97,13 +109,12 @@
 
     }
 
-    .fieldset{
-        transition: none;
-    }
-
     .recetas__footer{
          display: none;
    }
+
+
+
 
 } 
 
