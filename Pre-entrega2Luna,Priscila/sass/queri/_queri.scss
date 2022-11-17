@@ -60,16 +60,16 @@
     #GridContact {
         display: grid;
         grid-template-areas:
-            "nav_contacto "
-            "section   "
-            " listaCont"
-            "footer  ";
+            "nav_contacto"
+            "section"
+            "listaCont"
+            "footer";
     grid-template-columns: auto;
-    grid-template-rows: 22% auto auto;
-        height: 100vh;
+    grid-template-rows: 15% auto auto auto;
+        height: 200vh;
         margin: 0;
     }
-
+  
  fieldset{
     width:90%;
     padding: none; 
@@ -91,17 +91,15 @@
         text-align: center;
     }
 }
+.principal__footer{
+   grid-area: footer;
+}
 }
 
 
 @media screen and ( max-width: 900px)  {
 
-    .fondoRecetas{
-        background-color: #044a15a3;
-        background-image:none;
-        background-size: cover;
-        height: auto;
-    }
+  
        
 
     .Flex_Card{

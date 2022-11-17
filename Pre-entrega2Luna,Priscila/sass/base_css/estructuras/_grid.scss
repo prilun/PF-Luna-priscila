@@ -46,7 +46,7 @@
         "section       listaCont"
         "footer       footer";
     grid-template-columns: repeat(2,50%);
-    grid-template-rows: 12% 83% 5%;
+    grid-template-rows: 12% 73% 10%;
     height: 100vh;
     margin: 0;
 }
@@ -64,6 +64,9 @@
 }
 
 .footer_contacto {
+    grid-area: footer;
+}
+.principal__footer{
     grid-area: footer;
 }
 
