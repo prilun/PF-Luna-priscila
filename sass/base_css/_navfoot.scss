@@ -1,0 +1,79 @@
+
+.navbar{
+    background-color:$color-navbar;
+}
+.navbar-brand{
+    color:$color-basico3;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.offcanvas{
+    background-color:$color-navbar;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.offcanvas-title{
+    color:$color-basico3;
+}
+
+.nav-link{
+    @extend .offcanvas-title;
+}
+
+/*footer pricipal*/
+.principal__footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    padding: 10px 10px;
+    margin-top: auto;
+    background-color:$color-navbar;
+    &__list {
+        list-style: none;
+    
+    }
+    &__link{
+        text-decoration: none;
+        color:$color-basico3;
+    }
+}
+/*footer tienda*/
+.footerTien{
+    background-color:$color-navbar;
+    padding: 10px 10px;
+    margin-top: auto;
+    &__lista{
+        list-style: none;
+        height: 20px;
+        width: 100%;
+        border-radius: 4px;
+        padding: 10px 60px;
+    &__link{
+        color:$color-basico3;
+    }
+}
+
+}
+/*footer recetas*/
+
+.recetas__footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    padding: 10px 10px;
+    margin-top: auto;
+    background-color:$color-navbar;
+    &__list {
+        list-style: none;
+    
+    }
+    &__link{
+        text-decoration: none;
+        color:$color-basico3;
+      
+}
+}
