@@ -496,7 +496,7 @@
 
 /*preguntas*/
 .preguntas {
-  padding-top: 6rem;
+  padding-top: 2rem;
   color: #f6a93e;
 }
 
@@ -557,7 +557,7 @@ fieldset {
     grid-template-columns: 100%;
     grid-template-rows: 10% 20% 20% 20%;
     height: auto;
-    margin-left: none;
+    margin-left: 0px;
   }
   .container-fluid {
     margin-top: 3rem;
@@ -571,6 +571,11 @@ fieldset {
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 20px 20px;
+  }
+  .principal__footer {
+    position: relative;
+    bottom: 0;
+    margin-top: 6rem;
   }
 }
 /*media queri tienda*/
