@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0%;
   margin: 0%;
@@ -41,41 +40,6 @@
 
 .almendras {
   grid-area: almendras;
-}
-
-/*GRID contactos*/
-#GridContact {
-  display: grid;
-  grid-template-areas: "nav_contacto   nav_contacto" "section       listaCont" "footer       footer";
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: 12% 73% 10%;
-  height: 100vh;
-  margin: 0;
-}
-
-.nav_contacto {
-  grid-area: nav_contacto;
-}
-
-.listaCont {
-  grid-area: listaCont;
-}
-
-.sectionC {
-  grid-area: section;
-}
-
-.footer_contacto {
-  grid-area: footer;
-}
-
-.principal__footer {
-  grid-area: footer;
-}
-
-/*preguntas¨*/
-.preguntas {
-  grid-area: section;
 }
 
 /*index*/
@@ -514,7 +478,6 @@
 legend {
   color: white;
   border: 2px solid #369d2a;
-  width: 19rem;
   font-size: 100%;
   font-style: italic;
   background-color: #95a131;
@@ -530,8 +493,9 @@ fieldset {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 1.2rem;
   line-height: 2;
-  text-align: center;
+  padding-left: 0rem;
   color: white;
+  text-align: center;
 }
 .contacto__listaUno__titulo {
   text-transform: uppercase;
@@ -544,7 +508,7 @@ fieldset {
   background-color: rgba(12, 128, 6, 0.7333333333);
 }
 .contacto__listaDos__link {
-  padding: 40px 40px;
+  padding: 10px 20px;
   text-transform: none;
   color: #99f681;
 }
@@ -576,6 +540,7 @@ fieldset {
     position: relative;
     bottom: 0;
     margin-top: 6rem;
+    height: 100%;
   }
 }
 /*media queri tienda*/
@@ -597,27 +562,11 @@ fieldset {
     color: black;
   }
   /*mediaqueri contacto */
-  #GridContact {
-    display: grid;
-    grid-template-areas: "nav_contacto" "section" "listaCont" "footer";
-    grid-template-columns: auto;
-    grid-template-rows: 15% auto auto auto;
-    height: 200vh;
-    margin: 0;
-  }
-  fieldset {
-    width: 90%;
-    padding: none;
-  }
   .listaCont {
     transition: all 2s;
   }
   .listaCont:hover {
     background-color: orange;
-  }
-  .sectionC {
-    width: 90%;
-    height: 90%;
   }
   .contacto__listaUno {
     text-align: start;

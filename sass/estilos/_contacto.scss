@@ -12,7 +12,6 @@
 legend{
     color:$color-basico4;
     border: $border-verde;
-    width: 19rem;
     font-size: 100%;
     font-style: italic;
     background-color:$color-titulo;
@@ -29,8 +28,9 @@ fieldset{
     font-family: $letra-secundaria;
     font-size: 1.2rem;
     line-height: 2;
-    text-align: center;
+    padding-left: 0rem;
     color:$color-basico4;
+    text-align: center;
 
     &__titulo{
         text-transform: uppercase;
@@ -43,7 +43,7 @@ fieldset{
     list-style: none;
     background-color:$color-navbar;
     &__link{
-        padding: 40px 40px;
+        padding: 10px 20px;
         text-transform: none;
         color:$color-basico3;
     }

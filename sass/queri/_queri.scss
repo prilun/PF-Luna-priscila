@@ -34,6 +34,7 @@
         position: relative;
         bottom: 0;
         margin-top: 6rem;
+        height: 100%;
     
     }
 }
@@ -64,23 +65,9 @@
     }
 
     /*mediaqueri contacto */
-    #GridContact {
-        display: grid;
-        grid-template-areas:
-            "nav_contacto"
-            "section"
-            "listaCont"
-            "footer";
-    grid-template-columns: auto;
-    grid-template-rows: 15% auto auto auto;
-        height: 200vh;
-        margin: 0;
-    }
+
   
- fieldset{
-    width:90%;
-    padding: none; 
-}
+
 .listaCont{
     transition: all 2s;
 
@@ -88,10 +75,7 @@
 .listaCont:hover{
     background-color: orange;
 }
-.sectionC{
-  width: 90%;
-  height: 90%;
-}
+
 .contacto__listaUno{
     text-align: start;
     &__titulo{
