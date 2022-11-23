@@ -250,7 +250,7 @@
 
 /*paginas*/
 /*pagina principal*/
-.principal {
+.principal, .fondoRecetas, .fondoTienda, .fondoPreg, .fondoCon {
   position: relative;
 }
 
@@ -471,13 +471,13 @@
 }
 
 /*preguntas*/
-.preguntas {
+.preguntas, .AcercaDeNosotros {
   padding-top: 2rem;
   color: #d8e200;
   font-weight: bolder;
 }
 
-.preguntas:hover {
+.preguntas:hover, .AcercaDeNosotros:hover {
   background-color: white;
 }
 
@@ -604,15 +604,8 @@ fieldset {
     display: none;
   }
 }
-.principal {
+.principal, .fondoRecetas, .fondoTienda, .fondoPreg, .fondoCon {
   background-image: url(../img/marmol-blanco-producto-cuadrado1-47cea21eea4f170d2516578998766752-1024-1024.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-}
-
-.fondoPreg, .fondoCon {
-  background-image: url(../img/fondo-frutas-verduras_23-2148494516.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -620,10 +613,5 @@ fieldset {
 }
 
 .fondoRecetas, .fondoTienda {
-  background-image: url(../img/marmol-blanco-producto-cuadrado1-47cea21eea4f170d2516578998766752-1024-1024.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
   position: relative;
 }/*# sourceMappingURL=style.css.map */

@@ -4,8 +4,14 @@
     padding-top: 2rem;
     color:#d8e200;
     font-weight: bolder;
+  
     }
-    
-    .preguntas:hover{
+ .preguntas:hover{
         background-color: $color-basico4;
+    }
+
+
+    .AcercaDeNosotros{
+    @extend .preguntas;
+   
     }

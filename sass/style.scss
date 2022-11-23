@@ -16,26 +16,19 @@
 
 .principal{
     background-image: url(../img/marmol-blanco-producto-cuadrado1-47cea21eea4f170d2516578998766752-1024-1024.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
 }
 
 .fondoPreg{
-    background-image: url(../img/fondo-frutas-verduras_23-2148494516.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
+    @extend .principal;
     
 }
 
 .fondoRecetas{
-    background-image: url(../img/marmol-blanco-producto-cuadrado1-47cea21eea4f170d2516578998766752-1024-1024.jpg);
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
+    @extend .principal;
     position: relative;
 }
 
