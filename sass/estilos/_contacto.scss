@@ -29,22 +29,24 @@ fieldset{
     font-size: 1.2rem;
     line-height: 2;
     padding-left: 0rem;
-    color:$color-basico4;
+    color:#00002c;
     text-align: center;
 
     &__titulo{
         text-transform: uppercase;
-        color:$color-navbar;
+        color:$colorLink;
         font-weight: bolder;
     }
 }
 
 .contacto__listaDos{
     list-style: none;
-    background-color:$color-navbar;
+    background-color:$colorLink;
+    border-radius: 8px;
     &__link{
         padding: 10px 20px;
         text-transform: none;
-        color:$color-basico3;
+        color:$color-basico4;
+       
     }
 }

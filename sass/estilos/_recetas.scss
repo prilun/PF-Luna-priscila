@@ -9,3 +9,14 @@
 .recetas_tarjetas:hover{
     transform: translateY(40px);
 }
+
+.card-text{
+    color: $colornaran;
+}
+
+.card-title{
+    color: $color-basico4;
+    background-color:$color-titulo;
+    text-align: center;
+    border-radius: 4px;
+}

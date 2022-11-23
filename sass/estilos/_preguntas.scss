@@ -2,6 +2,10 @@
 
 .preguntas{
     padding-top: 2rem;
-    color:$colornaran;
+    color:#d8e200;
+    font-weight: bolder;
     }
     
+    .preguntas:hover{
+        background-color: $color-basico4;
+    }
